@@ -4,7 +4,12 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scipy import stats
+from sklearn.ensemble import RandomForestRegressor
 from statsmodels.tsa.seasonal import seasonal_decompose
+
 
 # Set page configuration
 st.set_page_config(layout="wide", page_title="Emotion and Transcript Data Dashboard")
@@ -364,13 +369,114 @@ def combined_gaze_analysis():
 
 
 
+# Load data
 def show_final_analysis():
-    st.title("Final Dataset")
-    st.subheader("Merged Data: Emotion, Gaze, and Transcript")
+    st.title("Advanced EDA of Video Text Dataset")
     
-    # Replace with your actual DataFrame
-    df_final = ...  # Load or process your DataFrame here
-    st.write(df_final)
+    df = pd.read_csv("final_df.csv")
+
+    # Display first few rows of the dataset
+    st.write("### Data Preview:")
+    st.write(df.head())
+
+    # General statistics
+    st.write("### Data Summary:")
+    st.write(df.info())
+    st.write(df.describe())
+
+    # Correlation matrix (excluding non-numeric columns)
+    st.write("### Correlation Matrix:")
+    numeric_df = df.select_dtypes(include=['float64', 'int64'])  # Select only numeric columns
+    corr = numeric_df.corr()  # Compute correlation only for numeric columns
+    fig = px.imshow(corr, text_auto=True, color_continuous_scale='RdBu_r', aspect='auto')
+    st.plotly_chart(fig)
+
+    # Distribution of each feature
+    st.write("### Feature Distributions:")
+    features = df.columns.tolist()
+    for feature in features:
+        if df[feature].dtype in ['float64', 'int64']:
+            st.write(f"#### {feature} Distribution:")
+            fig = px.histogram(df, x=feature, nbins=30, marginal="rug", title=f'Distribution of {feature}')
+            st.plotly_chart(fig)
+
+    # Dominant emotion counts
+    st.write("### Dominant Emotion Counts:")
+    fig = px.bar(df['dominant_emotion_top1'].value_counts(), title="Dominant Emotion Counts")
+    st.plotly_chart(fig)
+
+    # Pairplot equivalent with Plotly
+    st.write("### Scatter Plot Matrix:")
+    fig = px.scatter_matrix(df[['avg_positive', 'avg_negative', 'avg_neutral', 'avg_confident', 'avg_hesitant']])
+    st.plotly_chart(fig)
+
+    # Boxplot for analyzing spread and outliers
+    st.write("### Boxplots for Outliers Detection:")
+    for feature in features:
+        if df[feature].dtype in ['float64', 'int64']:
+            st.write(f"#### {feature} Boxplot:")
+            fig = px.box(df, y=feature, title=f'Boxplot of {feature}')
+            st.plotly_chart(fig)
+    
+    # Distribution of emotions
+    st.header("Distribution of Emotions")
+    emotion_cols = ['avg_positive', 'avg_negative', 'avg_neutral']
+    fig = make_subplots(rows=1, cols=3, subplot_titles=emotion_cols)
+    for i, col in enumerate(emotion_cols):
+        fig.add_trace(go.Histogram(x=df[col], name=f'Distribution of {col}', nbinsx=30), row=1, col=i+1)
+    fig.update_layout(title_text="Distribution of Emotions", showlegend=False)
+    st.plotly_chart(fig)
+
+    # Boxplot of confident vs hesitant
+    st.header("Confidence vs Hesitation")
+    fig = px.box(df[['avg_confident', 'avg_hesitant']], title="Confidence vs Hesitation")
+    st.plotly_chart(fig)
+
+    # Time series analysis of speech speed
+    st.header("Speech Speed Over Time")
+    fig = px.line(df, x=df.index, y='avg_speech_speed', title='Speech Speed Over Time', labels={'x':'Video Index'})
+    st.plotly_chart(fig)
+
+    # Dominant emotion analysis
+    st.header("Dominant Emotion Analysis")
+    emotion_counts = df['dominant_emotion_top1'].value_counts()
+    fig = px.bar(emotion_counts, title="Distribution of Dominant Emotions")
+    st.plotly_chart(fig)
+
+    # Statistical tests
+    st.header("Statistical Tests")
+
+    # T-test between confident and hesitant
+    t_stat, p_value = stats.ttest_ind(df['avg_confident'], df['avg_hesitant'])
+    st.write(f"T-test between confident and hesitant: t-statistic = {t_stat:.4f}, p-value = {p_value:.4f}")
+
+    # ANOVA for emotions across different speech speeds
+    df['speed_category'] = pd.qcut(df['avg_speech_speed'], q=3, labels=['Slow', 'Medium', 'Fast'])
+    f_stat, p_value = stats.f_oneway(df[df['speed_category'] == 'Slow']['avg_positive'],
+                                     df[df['speed_category'] == 'Medium']['avg_positive'],
+                                     df[df['speed_category'] == 'Fast']['avg_positive'])
+    st.write(f"ANOVA for positive emotion across speech speeds: F-statistic = {f_stat:.4f}, p-value = {p_value:.4f}")
+
+    # Feature importance
+    st.header("Feature Importance")
+
+    X = df[['avg_positive', 'avg_negative', 'avg_neutral', 'avg_confident', 'avg_hesitant', 'avg_concise', 'avg_enthusiastic']]
+    y = df['avg_speech_speed']
+    model = RandomForestRegressor()
+    model.fit(X, y)
+    importances = pd.DataFrame({'feature': X.columns, 'importance': model.feature_importances_})
+    importances = importances.sort_values('importance', ascending=False)
+    fig = px.bar(importances, x='importance', y='feature', orientation='h', title="Feature Importance for Speech Speed")
+    st.plotly_chart(fig)
+
+    # Interactive widget for exploring relationships
+    st.header("Explore Relationships")
+    x_axis = st.selectbox("Choose X-axis", df.columns)
+    y_axis = st.selectbox("Choose Y-axis", df.columns)
+    fig = px.scatter(df, x=x_axis, y=y_axis, title=f'{x_axis} vs {y_axis}')
+    st.plotly_chart(fig)
+
+
 
 
 def main():
