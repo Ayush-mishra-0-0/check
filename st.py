@@ -4,6 +4,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
+import io
 import seaborn as sns
 import matplotlib.pyplot as plt
 from scipy import stats
@@ -17,12 +18,13 @@ st.set_page_config(layout="wide", page_title="Emotion and Transcript Data Dashbo
 # Sidebar
 st.sidebar.title("Navigation")
 data_type = st.sidebar.radio("Select Data Type", [
+    "final",
     "Emotion Data", 
     "Transcript Data", 
     "Combined Emotion Analysis", 
     "Combined Gaze Data", 
-    "Emotion with Gaze and Transcript Analysis",
-    "final"
+    "Emotion with Gaze and Transcript Analysis"
+    
 ])
 
 # Helper functions
@@ -379,9 +381,23 @@ def show_final_analysis():
     st.write("### Data Preview:")
     st.write(df.head())
 
-    # General statistics
+    
+     # General statistics
+    st.write("### Data Info:")
+    
+    # Manually extract data from df.info() to construct a DataFrame
+    info_data = {
+        'Column': df.columns,
+        'Non-Null Count': [df[col].notnull().sum() for col in df.columns],
+        'Dtype': [df[col].dtype for col in df.columns]
+    }
+    
+    df_info = pd.DataFrame(info_data)
+    
+    # Display the DataFrame
+    st.write(df_info)
+
     st.write("### Data Summary:")
-    st.write(df.info())
     st.write(df.describe())
 
     # Correlation matrix (excluding non-numeric columns)
