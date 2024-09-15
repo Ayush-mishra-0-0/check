@@ -144,6 +144,9 @@ def gaze_data_analysis(option):
     emotion_df, gaze_df = load_emotion_data(option)
     
     st.header("Gaze Data Analysis")
+
+    st.header("Structure of Gaze Data")
+    st.write(gaze_df.head())
     
     st.subheader("Basic Statistics")
     st.write(gaze_df.describe())
