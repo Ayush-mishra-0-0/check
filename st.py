@@ -407,14 +407,201 @@ def show_final_analysis():
     fig = px.imshow(corr, text_auto=True, color_continuous_scale='RdBu_r', aspect='auto')
     st.plotly_chart(fig)
 
-    # Distribution of each feature
-    st.write("### Feature Distributions:")
-    features = df.columns.tolist()
-    for feature in features:
-        if df[feature].dtype in ['float64', 'int64']:
-            st.write(f"#### {feature} Distribution:")
-            fig = px.histogram(df, x=feature, nbins=30, marginal="rug", title=f'Distribution of {feature}')
+    def distribution_plots(df):
+        st.write("### Distribution of Emotional and Communication Attributes:")
+        
+        # List of columns to visualize
+        columns = ['avg_positive', 'avg_negative', 'avg_neutral', 'avg_confident', 
+                'avg_hesitant', 'avg_concise', 'avg_enthusiastic', 'avg_speech_speed']
+        
+        for col in columns:
+            st.write(f"#### {col} Distribution:")
+            fig = px.line(df,x= range(1,11), y=col, title=f"Distribution of {col}")
             st.plotly_chart(fig)
+
+    # Call the function
+    distribution_plots(df)
+    def analyze_confidence(df):
+        st.write("### High-Confidence vs Low-Confidence Groups:")
+        
+        # Define threshold for high confidence
+        high_conf_threshold = df['avg_confident'].median()
+        
+        # Create high and low confidence groups
+        high_confidence = df[df['avg_confident'] >= high_conf_threshold]
+        low_confidence = df[df['avg_confident'] < high_conf_threshold]
+        
+        st.write("#### High-Confidence Group:")
+        st.write(high_confidence[['avg_positive', 'avg_negative', 'avg_neutral', 'avg_confident', 'avg_hesitant', 'avg_speech_speed']])
+        
+        st.write("#### Low-Confidence Group:")
+        st.write(low_confidence[['avg_positive', 'avg_negative', 'avg_neutral', 'avg_confident', 'avg_hesitant', 'avg_speech_speed']])
+
+    # Call the function
+    analyze_confidence(df)
+
+    def enthusiastic_neutral(df):
+        st.write("### Enthusiastic Students with Neutral Text Score:")
+        
+        # Define threshold for high enthusiasm
+        enth_threshold = df['avg_enthusiastic'].median()
+        
+        # Enthusiastic students with a neutral dominant emotion
+        enth_neutral = df[(df['avg_enthusiastic'] >= enth_threshold) & (df['dominant_emotion_top1'] == 'neutral')]
+        
+        st.write(f"Number of enthusiastic students with neutral text score: {len(enth_neutral)}")
+        
+        # Show these students
+        st.write(enth_neutral[['avg_positive', 'avg_confident', 'avg_enthusiastic', 'avg_speech_speed', 'dominant_emotion_top1']])
+
+    # Call the function
+    enthusiastic_neutral(df)
+
+
+    def analyze_positive_confident_enthusiastic(df):
+        st.write("### Positive, Confident, Enthusiastic (with Speech Speed and Hesitance):")
+        
+        # Define thresholds
+        pos_threshold = df['avg_positive'].median()
+        conf_threshold = df['avg_confident'].median()
+        enth_threshold = df['avg_enthusiastic'].median()
+        speech_speed_threshold = df['avg_speech_speed'].median()
+        hesitant_threshold = df['avg_hesitant'].median()
+        
+        # Positive, confident, and enthusiastic with normal speech speed and low hesitation
+        pos_conf_enth_norm_speed = df[(df['avg_positive'] >= pos_threshold) & 
+                                    (df['avg_confident'] >= conf_threshold) &
+                                    (df['avg_enthusiastic'] >= enth_threshold) &
+                                    (df['avg_speech_speed'] <= speech_speed_threshold) &
+                                    (df['avg_hesitant'] <= hesitant_threshold)]
+        
+        st.write(f"Number of students who are positive, confident, enthusiastic, with normal speech speed and low hesitance: {len(pos_conf_enth_norm_speed)}")
+        
+        # Show these students
+        st.write(pos_conf_enth_norm_speed[['avg_positive', 'avg_confident', 'avg_enthusiastic', 'avg_speech_speed', 'avg_hesitant']])
+
+    # Call the function
+    analyze_positive_confident_enthusiastic(df)
+
+    def analyze_positive_confident_enthusiastic2(df):
+        st.write("### Positive, Confident, and Enthusiastic Students:")
+        
+        # Define thresholds
+        pos_threshold = df['avg_positive'].median()
+        conf_threshold = df['avg_confident'].median()
+        enth_threshold = df['avg_enthusiastic'].median()
+        concise_threshold = df['avg_concise'].median()
+        
+        # Positive and confident
+        pos_conf = df[(df['avg_positive'] >= pos_threshold) & (df['avg_confident'] >= conf_threshold)]
+        st.write(f"Number of students who are positive and confident: {len(pos_conf)}")
+        
+        # Positive and enthusiastic
+        pos_enth = df[(df['avg_positive'] >= pos_threshold) & (df['avg_enthusiastic'] >= enth_threshold)]
+        st.write(f"Number of students who are positive and enthusiastic: {len(pos_enth)}")
+        
+        # Positive but not concise
+        pos_not_concise = df[(df['avg_positive'] >= pos_threshold) & (df['avg_concise'] < concise_threshold)]
+        st.write(f"Number of students who are positive but not concise: {len(pos_not_concise)}")
+        
+        # Positive, confident but not concise
+        pos_conf_not_concise = df[(df['avg_positive'] >= pos_threshold) & 
+                                (df['avg_confident'] >= conf_threshold) & 
+                                (df['avg_concise'] < concise_threshold)]
+        st.write(f"Number of students who are positive and confident but not concise: {len(pos_conf_not_concise)}")
+        
+        # Confident but not positive
+        conf_not_pos = df[(df['avg_confident'] >= conf_threshold) & (df['avg_positive'] < pos_threshold)]
+        st.write(f"Number of students who are confident but not positive: {len(conf_not_pos)}")
+
+    # Call the function
+    analyze_positive_confident_enthusiastic2(df)
+    
+
+    def analyze_emotions_and_attributes_interactive(df):
+        st.write("### Interactive Emotional and Attribute-Based Analysis")
+        
+        # Define thresholds
+        pos_threshold = df['avg_positive'].median()
+        conf_threshold = df['avg_confident'].median()
+        enth_threshold = df['avg_enthusiastic'].median()
+        concise_threshold = df['avg_concise'].median()
+
+        # Dropdown to filter by dominant emotion
+        emotion = st.selectbox("Select Dominant Emotion to Analyze:", ['All'] + df['dominant_emotion_top1'].unique().tolist())
+
+        # Filter the dataframe based on the selected emotion
+        if emotion != 'All':
+            filtered_df = df[df['dominant_emotion_top1'] == emotion]
+        else:
+            filtered_df = df
+        
+        st.write(f"Displaying data for emotion: {emotion}")
+
+        # Positive and confident
+        pos_conf = filtered_df[(filtered_df['avg_positive'] >= pos_threshold) & (filtered_df['avg_confident'] >= conf_threshold)]
+        st.write(f"Number of students who are positive and confident: {len(pos_conf)}")
+
+        # Positive and enthusiastic
+        pos_enth = filtered_df[(filtered_df['avg_positive'] >= pos_threshold) & (filtered_df['avg_enthusiastic'] >= enth_threshold)]
+        st.write(f"Number of students who are positive and enthusiastic: {len(pos_enth)}")
+
+        # Positive but not concise
+        pos_not_concise = filtered_df[(filtered_df['avg_positive'] >= pos_threshold) & (filtered_df['avg_concise'] < concise_threshold)]
+        st.write(f"Number of students who are positive but not concise: {len(pos_not_concise)}")
+
+        # Confident but not positive
+        conf_not_pos = filtered_df[(filtered_df['avg_confident'] >= conf_threshold) & (filtered_df['avg_positive'] < pos_threshold)]
+        st.write(f"Number of students who are confident but not positive: {len(conf_not_pos)}")
+
+        # Positive, confident but not concise
+        pos_conf_not_concise = filtered_df[(filtered_df['avg_positive'] >= pos_threshold) & 
+                                            (filtered_df['avg_confident'] >= conf_threshold) & 
+                                            (filtered_df['avg_concise'] < concise_threshold)]
+        st.write(f"Number of students who are positive and confident but not concise: {len(pos_conf_not_concise)}")
+        
+        # Plot positive vs. confident
+        fig1 = px.scatter(filtered_df, x='avg_positive', y='avg_confident', 
+                        color='dominant_emotion_top1', 
+                        title='Positive vs. Confident Score')
+        st.plotly_chart(fig1)
+        
+        # Plot positive vs. concise
+        fig2 = px.scatter(filtered_df, x='avg_positive', y='avg_concise', 
+                        color='dominant_emotion_top1', 
+                        title='Positive vs. Concise Score')
+        st.plotly_chart(fig2)
+
+        # Additional Plot: Speech Speed vs. Hesitant
+        fig3 = px.scatter(filtered_df, x='avg_speech_speed', y='avg_hesitant', 
+                        color='dominant_emotion_top1', 
+                        title='Speech Speed vs. Hesitant Score')
+        st.plotly_chart(fig3)
+    # Call the function
+    analyze_emotions_and_attributes_interactive(df)
+
+
+    def composite_score_analysis(df):
+        st.write("### Composite Score for Candidate Ranking:")
+        
+        # Create a composite score based on key attributes including speech speed and hesitation
+        df['composite_score'] = (df['avg_positive'] + df['avg_confident'] + 
+                                df['avg_enthusiastic'] - df['avg_hesitant'] - 
+                                abs(df['avg_speech_speed'] - 3))  # Assuming normal speech speed is around 3
+        
+        # Sort by composite score
+        ranked_df = df.sort_values(by='composite_score', ascending=False)
+        
+        st.write("#### Ranked Candidates by Composite Score:")
+        st.write(ranked_df[['Unnamed: 0', 'composite_score']])
+
+    # Call the function
+    composite_score_analysis(df)
+
+
+
+
+
 
     # Dominant emotion counts
     st.write("### Dominant Emotion Counts:")
@@ -426,13 +613,13 @@ def show_final_analysis():
     fig = px.scatter_matrix(df[['avg_positive', 'avg_negative', 'avg_neutral', 'avg_confident', 'avg_hesitant']])
     st.plotly_chart(fig)
 
-    # Boxplot for analyzing spread and outliers
-    st.write("### Boxplots for Outliers Detection:")
-    for feature in features:
-        if df[feature].dtype in ['float64', 'int64']:
-            st.write(f"#### {feature} Boxplot:")
-            fig = px.box(df, y=feature, title=f'Boxplot of {feature}')
-            st.plotly_chart(fig)
+    # # Boxplot for analyzing spread and outliers
+    # st.write("### Boxplots for Outliers Detection:")
+    # for feature in features:
+    #     if df[feature].dtype in ['float64', 'int64']:
+    #         st.write(f"#### {feature} Boxplot:")
+    #         fig = px.box(df, y=feature, title=f'Boxplot of {feature}')
+    #         st.plotly_chart(fig)
     
     # Distribution of emotions
     st.header("Distribution of Emotions")
