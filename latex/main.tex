@@ -544,40 +544,118 @@ i. \textbf{Gaze Analysis}\\
     }
 \end{enumerate}
 
+\vspace{0.3in}
 ii. \textbf{Blink Analysis}\\
 \textbf{Blinking} is another important aspect of body language that can indicate a student's level of comfort and confidence during communication.\\
 
+If a student blinks too frequently, it may suggest nervousness or discomfort, while infrequent blinking may indicate confidence or focus.\\
+
+% Catch Box
+\begin{tcolorbox}[colback=yellow!10!white, colframe=red!80!black, title=Catch]
+   Since the blinking rate will depend on the amount of time of video, i have to divided the blink_sum with total frames of the video to get the blink rate.\\
+
+   \textbf{Blink Rate = blink\_sum / total\_frames}\\
+
+\end{tcolorbox}
+    
+
 \begin{center}
-    \includegraphics[width=1\columnwidth]{images/blink_sum.png}
+    \includegraphics[width=1\columnwidth]{images/blink.png}
 \end{center}
 
 \textsc{Based on the above graph, following observations can be made:}
 
-\subsection{Expertise Identification}
-% Include content about Named Entity Recognition, frequency distribution of key terms, etc.
+\begin{enumerate}
+    \item High Blink Rate: Students who blinked frequently during the video, i.e they are either nervour or feeling anxiety.\\
+    {
+        In this category, Student 4,5,7,10 fall as their blink rate is .
+    }
+    \item Normal Blink Rate: Students who blinked at a moderate rate during the video.\\
+    {
+        In this category, Student 1,2,3,5,6,8,9 fall as their blink rate is between 0.2 to 0.5.
+    }
+\end{enumerate}
 
-\subsection{Decision Support Metrics}
-% Include content about composite scores for communication skills, emotional intelligence, etc.
+\vspace{0.3in}
+iii. \textbf{Eye Offset Analysis}\\
 
-\subsection{Comparative Analysis}
-% Include content about comparing candidates if data is available
+\textbf{Eye offset} is a measure of how much a student's gaze deviates from the camera during communication.\\
+So the higher the eye offset, the more the student's gaze is wandering away from the camera.\\
 
-\subsection{Insights Generation}
-% Include content about top strengths and weaknesses, communication style summary, etc.
+\begin{center}
+    \includegraphics[width=1\columnwidth]{images/eye_offset.png}
+\end{center}
 
-\subsection{Recommendation Framework}
-% Include content about scoring system and decision matrix
+1. Max and Min Eye Offset (Left Plot):\\
 
-\subsection{Visualization Dashboard}
-% Describe the comprehensive dashboard with key visualizations and metrics
+This chart displays the maximum and minimum eye offsets for each student.\\
+The blue bars represent the max positive deviation, and the orange bars represent the max negative deviation.
 
-\subsection{Further Investigation Points}
-% Include content about specific moments to investigate and suggested follow-up questions
+\vspace{0.1in}
+
+2. Eye Offset Standard Deviation (Right Plot):\\
+
+This chart shows the standard deviation of eye offsets for each student.\\
+The standard deviation indicates how much the student's eyes typically deviated from the mean eye position over the duration of the video.
+
+
+\textsc{Based on the above graph, following observations can be made:}
+\begin{enumerate}
+    \item \texttt{Highly Erratic Eye Movements:} {
+        \begin{itemize}
+            \item {Student 7 shows the greatest overall deviation in both positive/negative offsets and in the standard deviation, indicating highly variable and erratic eye movements.}
+            \item {Students 3 and 4 also show significant deviation in eye movements, suggesting frequent or large fluctuations in where they were looking.
+            }
+        \end{itemize}
+    }
+    \item \texttt{Moderate Eye Movements:} {
+        \begin{itemize}
+            \item {Students 1, 2, and 10 demonstrate moderate eye movement variability. They have noticeable deviations but are less erratic compared to students like 7 and 3.
+            }
+        \end{itemize}
+    }
+    \item \texttt{Stable Eye Movements:} {
+        \begin{itemize}
+            \item {Students 5, 6, 8, and 9 exhibit the most stable eye movements, with minimal deviation from the mean eye position. This suggests that they maintained consistent eye contact with the camera throughout the video.
+            }
+        \end{itemize}
+    }
+\end{enumerate}
+
+% \subsection{Expertise Identification}
+% % Include content about Named Entity Recognition, frequency distribution of key terms, etc.
+
+
+
+
+
+% \subsection{Decision Support Metrics}
+% % Include content about composite scores for communication skills, emotional intelligence, etc.
+
+% \subsection{Comparative Analysis}
+% % Include content about comparing candidates if data is available
+
+% \subsection{Insights Generation}
+% % Include content about top strengths and weaknesses, communication style summary, etc.
+
+% \subsection{Recommendation Framework}
+% % Include content about scoring system and decision matrix
+
+% \subsection{Visualization Dashboard}
+% % Describe the comprehensive dashboard with key visualizations and metrics
+
+% \subsection{Further Investigation Points}
+% % Include content about specific moments to investigate and suggested follow-up questions
 
 \section{Individual Student Analysis}
 % Repeat this section for each student, similar to the original document
+
+On the basis of above analysis, I have created a detailed analysis for each student.\\
+His expertise, communication skills, emotional intelligence, and body language are analyzed in detail.\\
 \subsection{Student 1}
 % Add detailed analysis for Student 1
+
+
 
 \subsection{Student 2}
 % Add detailed analysis for Student 2
