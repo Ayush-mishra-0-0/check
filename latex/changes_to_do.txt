@@ -1,0 +1,6 @@
+change student1 and student2
+add score table of all students
+add wordblob of all students
+add short section of all results in start
+conclusion and dasu ending
+some grouping images from website like confident groups and non- confident groups

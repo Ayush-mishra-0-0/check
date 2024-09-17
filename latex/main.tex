@@ -60,22 +60,40 @@
 \definecolor{accentColor2}{RGB}{46, 117, 182}
 \definecolor{backgroundColor}{RGB}{245, 245, 245}
 
-% Redefine section format to include color
-\titleformat{\section}
-  {\color{primaryColor}\Large\bfseries}
-  % {\color{primaryColor}\assignmentQuestionName~\thesection}
-  {6pt}
-  {}
+
+\definecolor{sectioncolor}{RGB}{0,0,100}  % Deep blue for main headings
+\definecolor{subcolor}{RGB}{100,0,100}  % Purple for subheadings
+\definecolor{lightRed}{RGB}{255,200,200}  % Light red for section underline
+\definecolor{lightPink}{RGB}{255,220,220}  % Light pink for subsection underline
+
 
 \newcommand{\highlight}[1]{\textsf{\textbf{#1}}}  % For highlighting key terms in sans-serif bold
+% Custom underline command
+\newcommand{\customunderline}[2]{%
+  \par\noindent\rule{0pt}{2ex}\vspace{-0.5in} % Adjust the space here
+  \colorbox{#1}{\makebox[\linewidth]{#2}}\par
+}
 
-
-% Redefine subsection format to include color
-\titleformat{\subsection}
-  {\color{secondaryColor}\itshape}
-  {\color{secondaryColor}(\alph{subsection})}
-  {4pt}
+% Section format
+\titleformat{\section}
+  {\color{sectioncolor}\Huge\bfseries\sffamily}  % Sans-serif, huge, bold, blue
   {}
+  {0pt}
+  {}
+  
+ 
+
+% Subsection format
+\titleformat{\subsection}
+  {\color{subcolor}\Large\bfseries\sffamily}  % Sans-serif, large, bold, purple
+  {}
+  {0pt}
+  {}
+
+% % Adjust spacing
+% \titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+% \titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
 
 % % Modify the question environment to include color
 % \renewenvironment{question}{
@@ -144,6 +162,9 @@
 
 \newpage
 \section*{Dashboard}
+  \begin{center}
+        \color{red}\rule{1\linewidth}{1mm}
+    \end{center}
 \begin{center}
 \vspace{2in}
     {\Huge  For seeing all the code live interactively, \\
@@ -158,12 +179,22 @@
 \tableofcontents
 
 \newpage
-\section{Introduction}
+\section{1. Introduction}
+  \begin{center}
+        \color{red}\rule{1\linewidth}{1mm}
+    \end{center}
 This document presents an extensive Exploratory Data Analysis (EDA) of a video text dataset, focusing on emotional and communication attributes of students.
 
-\section{Data Overview}
+\section{2. Data Overview}
+  \begin{center}
+        \color{red}\rule{1\linewidth}{1mm}
+    \end{center}
 
+   
 \subsection{Emotion Data Overview}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
 \textbf{emotion\_data:} This dataset contains the following columns. We can inspect the first few rows using \textit{emotion\_df.head()}.
 \vspace{0.2in}
 \begin{tcolorbox}[colback=backgroundColor, colframe==accentColor2, title=Emotion Data Sample, fonttitle=\bfseries]
@@ -186,6 +217,9 @@ This is a sample of emotion data.
 \end{tcolorbox}
 
 \subsection{Structure of Gaze Data}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
 \begin{tcolorbox}[colback=backgroundColor, colframe=accentColor2, title=Gaze Data Structure, fonttitle=\bfseries]
 \begin{tabular}{p{2.5cm} ccc}
 \toprule
@@ -206,6 +240,9 @@ This is a sample of emotion data.
 % Transcript Data Section
 % \section{Transcript Data Analysis}
 \subsection{Transcript Data Sample}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
 \begin{tcolorbox}[
 colback=backgroundColor,
 colframe=accentColor2,
@@ -234,6 +271,9 @@ stretch = 1
 
 
 \subsection{Basic Statistics}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
 \begin{tcolorbox}[
 colback=backgroundColor,
 colframe=accentColor2,
@@ -269,7 +309,11 @@ Note: In the transcript data, the columns \textit{text}, \textit{tokens}, \texti
 
 
 
-\section{Data Preprocessing}
+\section{3. Data Preprocessing}
+  \begin{center}
+        \color{red}\rule{1\linewidth}{1mm}
+    \end{center}
+    
 \begin{tcolorbox}[colback=teal!5!white,colframe=teal!75!black,title= Steps for Data preprocessing]
 \textbf{The following steps were performed to preprocess the data before conducting any Exploratory Data Analysis (EDA):}
 
@@ -283,8 +327,12 @@ Note: In the transcript data, the columns \textit{text}, \textit{tokens}, \texti
 
 
 
-\section{Data Preparation and Integration}
+\section{4. Data Preparation and Integration}
 
+  \begin{center}
+        \color{red}\rule{1\linewidth}{1mm}
+    \end{center}
+    
 So, the data is spread across three different CSV files, and what I need to do is pull out key features from all of them to create a single, clean DataFrame.
 
 \noindent\sffamily
@@ -313,14 +361,18 @@ First off, I’m going to take the \highlight{dominant emotions} for each studen
 \end{multicols}
 \newpage
 
-So this is my new DATAFRAME , Let's call it \textsc{final_df}
+So this is my new DATAFRAME , Let's call it \textsc{final\_df}
 \begin{center}
     
 \includegraphics[width=1/columnwidth]{}
 \end{center}
 
 
-\section{Advanced Analysis}
+\section{5. Advanced Analysis}
+  \begin{center}
+        \color{red}\rule{1\linewidth}{1mm}
+    \end{center}
+    
 \begin{center}
     \includegraphics[width=1\columnwidth]{images/corr_matrix_of_final_data.png}
     \caption{}
@@ -363,7 +415,10 @@ Distribution plots were generated for various features to understand their sprea
 \end{figure}
 
 
-\subsection{Communication Skills Analysis}
+\subsection{A.) Communication Skills Analysis}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
 \begin{itemize}
     \item \textbf{First}, I will investigate the relationship between \textbf{conciseness} and \textbf{enthusiasm} of the students.\\ 
     For this, I am plotting a joint plot between avg\_concise and avg\_enthusiastic. From the plot, we can see that there is a positive correlation between the two features.\\
@@ -465,8 +520,12 @@ Distribution plots were generated for various features to understand their sprea
 \end{itemize}
 
 
-\subsection{Emotional State and Body Language Analysis}
+\subsection{B.) Emotional State and Body Language Analysis}
 % Include content about stacked area charts, emotional stability analysis, etc.
+
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
 
 1.\textbf{Emotional Stability Analysis} \\
 So, I have calculated the \textbf{emotional stability} of each student by analyzing the \textbf{variability} in their emotions throughout the video.\\  
@@ -647,18 +706,707 @@ The standard deviation indicates how much the student's eyes typically deviated 
 % \subsection{Further Investigation Points}
 % % Include content about specific moments to investigate and suggested follow-up questions
 
-\section{Individual Student Analysis}
+\section{6. Individual Student Analysis}
+  \begin{center}
+        \color{red}\rule{1\linewidth}{1mm}
+    \end{center}
 % Repeat this section for each student, similar to the original document
 
 On the basis of above analysis, I have created a detailed analysis for each student.\\
 His expertise, communication skills, emotional intelligence, and body language are analyzed in detail.\\
 \subsection{Student 1}
-% Add detailed analysis for Student 1
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
+    \large{\textbf{Transcript Sentiment:}}
+    \begin{tcolorbox}[ colback=purple!5!white,colframe=purple!75!black,   fonttitle=\bfseries, title=Sentiment Breakdown]
+        \begin{enumerate}
+            \item \textbf{Positive Score:} \textcolor{green!70!black}{0.709199}
+            \item \textbf{Negative Score:} \textcolor{red!70!black}{0.141214}
+            \item \textbf{Neutral Score:} \textcolor{blue!70!black}{0.149586}
+        \end{enumerate}
+    \end{tcolorbox}
+        \textbf{Analysis:} The student's speech is predominantly \textbf{positive}, with minimal negative or neutral tones.
 
+    \large{\textbf{Confidence and Hesitation:}}
+    \begin{tcolorbox}[colback=green!10!white, colframe=green!80!black, title=Confidence and Hesitant Scores]
+        \begin{enumerate}
+            \item \textbf{Confidence Score:} \textcolor{green!50!black}{0.733828}
+            \item \textbf{Hesitant Score:} \textcolor{red!70!black}{0.485172}
+        \end{enumerate}
+        \textbf{Analysis:} The student demonstrates high \textbf{confidence}, although there is some hesitation present.
+        \begin{itemize}
+            \item \textbf{Strengths:} Strong confidence helps in engaging the audience and conveying ideas effectively.
+            \item \textbf{Weaknesses:} Moderate hesitation might reduce the clarity of their message.
+        \end{itemize}
+    \end{tcolorbox}
+
+    \large{\textbf{Enthusiasm:}}
+    \begin{tcolorbox}[colback=orange!10!white, colframe=orange!80!black, title=Enthusiastic Score]
+        \begin{enumerate}
+            \item \textbf{Enthusiastic Score:} \textcolor{orange!70!black}{0.466497}
+        \end{enumerate}
+        \textbf{Analysis:} The student has a high enthusiasm score, indicating a positive energy in their speech.
+        \begin{itemize}
+            \item \textbf{Communication Skills:} High enthusiasm combined with confidence makes their speech engaging and dynamic.
+        \end{itemize}
+    \end{tcolorbox}
+
+    \large{\textbf{Speech Speed:}}
+    \begin{tcolorbox}[colback=purple!10!white, colframe=purple!80!black, title=Speech Speed]
+        \begin{enumerate}
+            \item \textbf{Speech Speed:} \textcolor{purple!70!black}{0.416344}
+        \end{enumerate}
+        \textbf{Analysis:} The student's speech speed is close to normal speed, indicating the stability and .
+        \begin{itemize}
+            \item \textbf{Emotional Intelligence:} Their ability to maintain a good pace shows awareness of audience engagement.
+        \end{itemize}
+    \end{tcolorbox}
+
+    \large{\textbf{Dominant Emotions:}}
+    \begin{tcolorbox}[colback=pink!10!white, colframe=pink!80!black, title=Emotional State]
+        \begin{enumerate}
+            \item \textbf{Top 1 Emotion:} \textcolor{blue!80!black}{Neutral}
+            \item \textbf{Top 2 Emotion:} \textcolor{red!80!black}{Fear}
+        \end{enumerate}
+        \textbf{Analysis:} The student's emotional state is predominantly neutral, with some underlying fear present.
+        \begin{itemize}
+            \item \textbf{Emotional Stability:} The neutral tone suggests good emotional control, although the presence of fear may indicate some anxiety.
+        \end{itemize}
+    \end{tcolorbox}
 
 
 \subsection{Student 2}
-% Add detailed analysis for Student 2
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
+% Add detailed analysis for Student2
+
+% Add detailed analysis for Student 1
+% Unnamed: 0	avg_positive	avg_negative	avg_neutral	avg_confident	avg_hesitant	avg_concise	avg_enthusiastic	avg_speech_speed	dominant_emotion_top1	dominant_emotion_top2
+% 0	1	0.709199	0.141214	0.149586	0.733828	0.485172	0.429418	0.466497	0.416344	neutral	fear
+% 1	2	0.722006	0.107541	0.170453	0.684879	0.436158	0.484221	0.516685	0.869530	happy	neutral
+% 2	3	0.567257	0.264337	0.168406	0.573566	0.604004	0.394715	0.448050	1.209575	neutral	fear
+% 3	4	0.655748	0.169142	0.175110	0.621740	0.570452	0.403479	0.440626	-0.570773	neutral	fear
+% 4	5	0.630573	0.187013	0.182414	0.590094	0.461488	0.413644	0.378110	-0.448559	neutral	neutral
+% 5	6	0.711182	0.138992	0.149826	0.679755	0.490252	0.367792	0.481433	-1.131826	neutral	neutral
+% 6	7	0.717354	0.140232	0.142414	0.703714	0.457070	0.398571	0.463940	-2.002086	fear	sad
+% 7	8	0.605402	0.192292	0.202306	0.555011	0.507622	0.352011	0.437399	-0.198767	neutral	fear
+% 8	9	0.617353	0.223949	0.158699	0.591842	0.538732	0.381809	0.505152	1.047063	neutral	happy
+% 9	10	0.589267	0.220948	0.189785	0.619852	0.520637	0.385655	0.325507	0.809499	sad	fear
+
+
+\large{\textbf{Transcript Sentiment:}}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black, fonttitle=\bfseries, title=Sentiment Breakdown]
+    \begin{enumerate}
+        \item \textbf{Positive Score:} \textcolor{green!70!black}{0.722006}
+        \item \textbf{Negative Score:} \textcolor{red!70!black}{0.107541}
+        \item \textbf{Neutral Score:} \textcolor{blue!70!black}{0.170453}
+    \end{enumerate}
+\end{tcolorbox}
+
+\large{\textbf{Confidence and Hesitation:}}
+\begin{tcolorbox}[colback=green!10!white, colframe=green!80!black, title=Confidence and Hesitant Scores]
+    \begin{enumerate}
+        \item \textbf{Confidence Score:} \textcolor{green!50!black}{0.684879}
+        \item \textbf{Hesitant Score:} \textcolor{red!70!black}{0.436158}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The student demonstrates high \textbf{confidence}(second highest score), although there is very few hesitation present(lowest).
+
+\large{\textbf{Enthusiasm:}}
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!80!black, title=Enthusiastic Score]
+    \begin{enumerate}
+        \item \textbf{Enthusiastic Score:} \textcolor{orange!70!black}{0.516685}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The student has a highest enthusiasm score among all the students, indicating a positive energy in their speech.
+
+\large{\textbf{Speech Speed:}}
+\begin{tcolorbox}[colback=purple!10!white, colframe=purple!80!black, title=Speech Speed]
+    \begin{enumerate}
+        \item \textbf{Speech Speed:} \textcolor{purple!70!black}{0.869530}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The student's speech speed is fastest among all the students, likely due to their enthusiasm and confidence.
+
+\large{\textbf{Dominant Emotions:}}
+\begin{tcolorbox}[colback=pink!10!white, colframe=pink!80!black, title=Emotional State]
+    \begin{enumerate}
+        \item \textbf{Top 1 Emotion:} \textcolor{blue!80!black}{Happy}
+        \item \textbf{Top 2 Emotion:} \textcolor{red!80!black}{Neutral}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The student's emotional state is predominantly happy, with some underlying neutral present.
+
+\subsection{Student 3}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
+\large{\textbf{Transcript Sentiment:}}
+\begin{tcolorbox}[title=Sentiment Breakdown]
+    \begin{enumerate}
+        \item \textbf{Positive Score:} \textcolor{green!70!black}{0.652301} (Rank: 7/10)
+        \item \textbf{Negative Score:} \textcolor{red!70!black}{0.167569} (Rank: 7/10)
+        \item \textbf{Neutral Score:} \textcolor{blue!70!black}{0.180130} (Rank: 6/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Balanced sentiment with moderate positive and negative scores, indicating a generally neutral emotional stance with a slight positive tilt.
+
+\large{\textbf{Confidence and Hesitation:}}
+\begin{tcolorbox}[title=Confidence and Hesitant Scores]
+    \begin{enumerate}
+        \item \textbf{Confidence Score:} \textcolor{green!50!black}{0.663123} (Rank: 4/10)
+        \item \textbf{Hesitant Score:} \textcolor{red!70!black}{0.445621} (Rank: 9/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} High confidence with relatively high hesitation. This indicates strong self-assurance but also a significant level of nervousness.
+
+\large{\textbf{Enthusiasm:}}
+\begin{tcolorbox}[ colback=purple!5!white,colframe=purple!75!black,  title=Enthusiastic Score]
+    \begin{enumerate}
+        \item \textbf{Enthusiastic Score:} \textcolor{orange!70!black}{0.418567} (Rank: 10/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Lowest enthusiasm score, suggesting lower engagement and energy compared to peers.
+
+\large{\textbf{Speech Speed:}}
+\begin{tcolorbox}[title=Speech Speed]
+    \begin{enumerate}
+        \item \textbf{Speech Speed:} \textcolor{purple!70!black}{-0.311245} (Rank: 6/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Moderate speech speed, indicating a balanced delivery pace.
+
+\large{\textbf{Dominant Emotions:}}
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Emotional State]
+    \begin{enumerate}
+        \item \textbf{Top 1 Emotion:} \textcolor{blue!80!black}{Neutral}
+        \item \textbf{Top 2 Emotion:} \textcolor{red!80!black}{Fear}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Predominantly neutral with fear as a secondary emotion, reflecting a mostly calm demeanor with some underlying apprehension.
+
+\textbf{Comparative Analysis:}
+\begin{itemize}
+    \item \textbf{Strengths:}
+    \begin{itemize}
+        \item \textbf{Confidence Score:} 4th highest among all students, showing strong self-assurance.
+        \item \textbf{Speech Speed:} 6th in ranking, indicating a moderate pace in speaking.
+    \end{itemize}
+    \item \textbf{Weaknesses:}
+    \begin{itemize}
+        \item \textbf{Enthusiasm Score:} Lowest enthusiasm, indicating reduced engagement and energy.
+        \item \textbf{Hesitant Score:} 9th highest, reflecting considerable hesitation compared to peers.
+    \end{itemize}
+    \item \textbf{Areas of Expertise:}
+    \begin{itemize}
+        \item \textbf{Confidence:} Demonstrates a high level of confidence, useful in scenarios requiring strong self-belief.
+        \item \textbf{Speech Pace:} Balanced speech speed, indicating a moderate approach to communication.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Overall:} Student 3 shows strong confidence but needs to work on increasing enthusiasm and reducing hesitation to improve overall presentation and engagement.
+
+\subsection{Student 4}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
+
+\large{\textbf{Transcript Sentiment:}}
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Sentiment Breakdown]
+    \begin{enumerate}
+        \item \textbf{Positive Score:} \textcolor{green!70!black}{0.655748} (Rank: 4/10)
+        \item \textbf{Negative Score:} \textcolor{red!70!black}{0.169142} (Rank: 6/10)
+        \item \textbf{Neutral Score:} \textcolor{blue!70!black}{0.175110} (Rank: 6/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The sentiment is slightly positive with a well-balanced neutral and negative score, indicating a generally positive outlook with some neutral stance.
+
+\large{\textbf{Confidence and Hesitation:}}
+\begin{tcolorbox}[title=Confidence and Hesitant Scores]
+    \begin{enumerate}
+        \item \textbf{Confidence Score:} \textcolor{green!50!black}{0.621740} (Rank: 5/10)
+        \item \textbf{Hesitant Score:} \textcolor{red!70!black}{0.570452} (Rank: 6/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Moderate confidence with high hesitation, showing a good level of self-assurance but also significant nervousness.
+
+\large{\textbf{Enthusiasm:}}
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Enthusiastic Score]
+    \begin{enumerate}
+        \item \textbf{Enthusiastic Score:} \textcolor{orange!70!black}{0.440626} (Rank: 9/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Low enthusiasm, indicating reduced engagement and energy compared to peers.
+
+\large{\textbf{Speech Speed:}}
+\begin{tcolorbox}[title=Speech Speed]
+    \begin{enumerate}
+        \item \textbf{Speech Speed:} \textcolor{purple!70!black}{-0.570773} (Rank: 7/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Slow speech speed, suggesting a deliberate and possibly cautious delivery pace.
+
+\large{\textbf{Dominant Emotions:}}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Emotional State]
+    \begin{enumerate}
+        \item \textbf{Top 1 Emotion:} \textcolor{blue!80!black}{Neutral}
+        \item \textbf{Top 2 Emotion:} \textcolor{red!80!black}{Fear}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Predominantly neutral with a secondary emotion of fear, reflecting a generally calm demeanor with some apprehension.
+
+\textbf{Comparative Analysis:}
+\begin{itemize}
+    \item \textbf{Strengths:}
+    \begin{itemize}
+        \item \textbf{Sentiment:} 4th in positive score, showing a good positive outlook.
+        \item \textbf{Confidence:} 5th highest, indicating solid self-assurance.
+    \end{itemize}
+    \item \textbf{Weaknesses:}
+    \begin{itemize}
+        \item \textbf{Enthusiasm Score:} 9th lowest, suggesting lower engagement.
+        \item \textbf{Speech Speed:} 7th slowest, reflecting a slower delivery pace.
+        \item \textbf{Hesitant Score:} 6th highest, showing notable hesitation.
+    \end{itemize}
+    \item \textbf{Areas of Expertise:}
+    \begin{itemize}
+        \item \textbf{Sentiment:} Positive sentiment indicates a generally favorable attitude.
+        \item \textbf{Confidence:} Good level of self-assurance in communication.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Overall:} Student 4 demonstrates solid confidence and positive sentiment but should work on increasing enthusiasm and reducing hesitation to enhance overall delivery.
+
+
+
+\subsection{Student 5}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
+
+\large{\textbf{Transcript Sentiment:}}
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Sentiment Breakdown]
+    \begin{enumerate}
+        \item \textbf{Positive Score:} \textcolor{green!70!black}{0.630573} (Rank: 6/10)
+        \item \textbf{Negative Score:} \textcolor{red!70!black}{0.187013} (Rank: 6/10)
+        \item \textbf{Neutral Score:} \textcolor{blue!70!black}{0.182414} (Rank: 5/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The sentiment shows a positive outlook with a balanced negative and neutral stance, indicating a generally optimistic but somewhat cautious approach.
+
+\large{\textbf{Confidence and Hesitation:}}
+\begin{tcolorbox}[ colback=purple!5!white,colframe=purple!75!black,  title=Confidence and Hesitant Scores]
+    \begin{enumerate}
+        \item \textbf{Confidence Score:} \textcolor{green!50!black}{0.590094} (Rank: 7/10)
+        \item \textbf{Hesitant Score:} \textcolor{red!70!black}{0.461488} (Rank: 8/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Moderate confidence with high hesitation, reflecting a solid level of self-assurance but with considerable nervousness.
+
+\large{\textbf{Enthusiasm:}}
+\begin{tcolorbox}[title=Enthusiastic Score]
+    \begin{enumerate}
+        \item \textbf{Enthusiastic Score:} \textcolor{orange!70!black}{0.378110} (Rank: 10/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Lowest enthusiasm score, indicating the least amount of engagement and energy compared to peers.
+
+\large{\textbf{Speech Speed:}}
+\begin{tcolorbox}[ colback=purple!5!white,colframe=purple!75!black,  title=Speech Speed]
+    \begin{enumerate}
+        \item \textbf{Speech Speed:} \textcolor{purple!70!black}{-0.448559} (Rank: 8/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Slow speech speed, indicating a cautious or deliberate speaking pace.
+
+\large{\textbf{Dominant Emotions:}}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Emotional State]
+    \begin{enumerate}
+        \item \textbf{Top 1 Emotion:} \textcolor{blue!80!black}{Neutral}
+        \item \textbf{Top 2 Emotion:} \textcolor{red!80!black}{Neutral}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Predominantly neutral with no strong secondary emotion, reflecting a calm and even emotional state.
+
+\textbf{Comparative Analysis:}
+\begin{itemize}
+    \item \textbf{Strengths:}
+    \begin{itemize}
+        \item \textbf{Sentiment:} 6th in positive score, showing a favorable outlook.
+        \item \textbf{Confidence:} 7th highest, indicating a reasonable level of self-assurance.
+    \end{itemize}
+    \item \textbf{Weaknesses:}
+    \begin{itemize}
+        \item \textbf{Enthusiasm Score:} 10th lowest, showing the least energy and engagement.
+        \item \textbf{Speech Speed:} 8th slowest, suggesting a slower delivery pace.
+        \item \textbf{Hesitant Score:} 8th highest, indicating significant hesitation.
+    \end{itemize}
+    \item \textbf{Areas of Expertise:}
+    \begin{itemize}
+        \item \textbf{Sentiment:} Positive outlook with balanced emotional stance.
+        \item \textbf{Confidence:} Good self-assurance in communication.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Overall:} Student 5 has a favorable sentiment and reasonable confidence but should focus on increasing enthusiasm and reducing hesitation to improve engagement and delivery.
+
+\subsection{Student 6}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
+
+\large{\textbf{Transcript Sentiment:}}
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Sentiment Breakdown]
+    \begin{enumerate}
+        \item \textbf{Positive Score:} \textcolor{green!70!black}{0.711182} (Rank: 2/10)
+        \item \textbf{Negative Score:} \textcolor{red!70!black}{0.138992} (Rank: 8/10)
+        \item \textbf{Neutral Score:} \textcolor{blue!70!black}{0.149826} (Rank: 8/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Strongly positive sentiment with low negative and neutral scores, indicating an optimistic and positive outlook.
+
+\large{\textbf{Confidence and Hesitation:}}
+\begin{tcolorbox}[ colback=purple!5!white,colframe=purple!75!black,  title=Confidence and Hesitant Scores]
+    \begin{enumerate}
+        \item \textbf{Confidence Score:} \textcolor{green!50!black}{0.679755} (Rank: 3/10)
+        \item \textbf{Hesitant Score:} \textcolor{red!70!black}{0.490252} (Rank: 7/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} High confidence with moderate hesitation, showing strong self-assurance but with some nervousness.
+
+\large{\textbf{Enthusiasm:}}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Enthusiastic Score]
+    \begin{enumerate}
+        \item \textbf{Enthusiastic Score:} \textcolor{orange!70!black}{0.481433} (Rank: 6/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Moderate enthusiasm, reflecting a balanced level of engagement and energy.
+
+\large{\textbf{Speech Speed:}}
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Speech Speed]
+    \begin{enumerate}
+        \item \textbf{Speech Speed:} \textcolor{purple!70!black}{-1.131826} (Rank: 9/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Slow speech speed, indicating a measured and deliberate delivery.
+
+\large{\textbf{Dominant Emotions:}}
+\begin{tcolorbox}[title=Emotional State]
+    \begin{enumerate}
+        \item \textbf{Top 1 Emotion:} \textcolor{blue!80!black}{Neutral}
+        \item \textbf{Top 2 Emotion:} \textcolor{red!80!black}{Neutral}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Predominantly neutral with a consistent emotional state.
+
+\textbf{Comparative Analysis:}
+\begin{itemize}
+    \item \textbf{Strengths:}
+    \begin{itemize}
+        \item \textbf{Sentiment:} 2nd in positive score, showing a very positive outlook.
+        \item \textbf{Confidence:} 3rd highest, reflecting strong self-assurance.
+    \end{itemize}
+    \item \textbf{Weaknesses:}
+    \begin{itemize}
+        \item \textbf{Speech Speed:} 9th slowest, suggesting a slower speaking pace.
+        \item \textbf{Hesitant Score:} 7th highest, indicating moderate hesitation.
+    \end{itemize}
+    \item \textbf{Areas of Expertise:}
+    \begin{itemize}
+        \item \textbf{Sentiment:} Highly positive outlook.
+        \item \textbf{Confidence:} Strong self-assurance in communication.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Overall:} Student 6 exhibits a very positive sentiment and strong confidence but should work on managing their speech speed and hesitation to enhance overall communication effectiveness.
+
+
+\subsection{Student 7}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
+
+\large{\textbf{Transcript Sentiment:}}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Sentiment Breakdown]
+    \begin{enumerate}
+        \item \textbf{Positive Score:} \textcolor{green!70!black}{0.717354} (Rank: 1/10)
+        \item \textbf{Negative Score:} \textcolor{red!70!black}{0.140232} (Rank: 9/10)
+        \item \textbf{Neutral Score:} \textcolor{blue!70!black}{0.142414} (Rank: 9/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Extremely positive sentiment with minimal negative and neutral scores, indicating an exceptionally optimistic and upbeat outlook.
+
+\large{\textbf{Confidence and Hesitation:}}
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Confidence and Hesitant Scores]
+    \begin{enumerate}
+        \item \textbf{Confidence Score:} \textcolor{green!50!black}{0.703714} (Rank: 2/10)
+        \item \textbf{Hesitant Score:} \textcolor{red!70!black}{0.457070} (Rank: 5/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} High confidence with lower hesitation, showing strong self-assurance and less nervousness.
+
+\large{\textbf{Enthusiasm:}}
+\begin{tcolorbox}[ colback=purple!5!white,colframe=purple!75!black,  title=Enthusiastic Score]
+    \begin{enumerate}
+        \item \textbf{Enthusiastic Score:} \textcolor{orange!70!black}{0.463940} (Rank: 5/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Moderate enthusiasm, indicating a good level of engagement and energy.
+
+\large{\textbf{Speech Speed:}}
+%  add color to tcolorbox
+
+\begin{tcolorbox}[ colback=cyan!5!white, colframe=cyan!75!black,  title=Speech Speed]
+    \begin{enumerate}
+        \item \textbf{Speech Speed:} \textcolor{purple!70!black}{-2.002086} (Rank: 10/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Slowest speech speed, reflecting a very deliberate and cautious delivery.
+
+\large{\textbf{Dominant Emotions:}}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Emotional State]
+    \begin{enumerate}
+        \item \textbf{Top 1 Emotion:} \textcolor{red!80!black}{Fear}
+        \item \textbf{Top 2 Emotion:} \textcolor{blue!80!black}{Sad}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Predominantly fearful with some sadness, indicating emotional challenges despite a positive sentiment.
+
+\textbf{Comparative Analysis:}
+\begin{itemize}
+    \item \textbf{Strengths:}
+    \begin{itemize}
+        \item \textbf{Sentiment:} 1st in positive score, demonstrating an exceptionally optimistic outlook.
+        \item \textbf{Confidence:} 2nd highest, reflecting strong self-assurance.
+    \end{itemize}
+    \item \textbf{Weaknesses:}
+    \begin{itemize}
+        \item \textbf{Speech Speed:} 10th slowest, suggesting a very slow speaking pace.
+        \item \textbf{Emotional State:} Predominantly fearful and sad, indicating underlying emotional challenges.
+    \end{itemize}
+    \item \textbf{Areas of Expertise:}
+    \begin{itemize}
+        \item \textbf{Sentiment:} Extremely positive and optimistic outlook.
+        \item \textbf{Confidence:} Strong self-assurance in communication.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Overall:} Student 7 exhibits exceptional positivity and strong confidence but should address the slow speech pace and manage underlying emotional challenges to enhance overall effectiveness.
+
+
+\subsection{Student 8}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
+
+\large{\textbf{Transcript Sentiment:}}
+\begin{tcolorbox}[ colback=purple!5!white,colframe=purple!75!black,  ,title=Sentiment Breakdown]
+    \begin{enumerate}
+        \item \textbf{Positive Score:} \textcolor{green!70!black}{0.605402} (Rank: 5/10)
+        \item \textbf{Negative Score:} \textcolor{red!70!black}{0.192292} (Rank: 5/10)
+        \item \textbf{Neutral Score:} \textcolor{blue!70!black}{0.202306} (Rank: 4/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Balanced sentiment with a positive outlook and moderate neutral and negative scores, indicating a generally positive but cautious approach.
+
+\large{\textbf{Confidence and Hesitation:}}
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Confidence and Hesitant Scores]
+    \begin{enumerate}
+        \item \textbf{Confidence Score:} \textcolor{green!50!black}{0.555011} (Rank: 8/10)
+        \item \textbf{Hesitant Score:} \textcolor{red!70!black}{0.507622} (Rank: 4/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Moderate confidence with lower hesitation, showing a reasonable level of self-assurance with some nervousness.
+
+\large{\textbf{Enthusiasm:}}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Enthusiastic Score]
+    \begin{enumerate}
+        \item \textbf{Enthusiastic Score:} \textcolor{orange!70!black}{0.437399} (Rank: 7/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Moderate enthusiasm, reflecting a decent level of engagement and energy.
+
+\large{\textbf{Speech Speed:}}
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Speech Speed]
+    \begin{enumerate}
+        \item \textbf{Speech Speed:} \textcolor{purple!70!black}{-0.888693} (Rank: 6/10)
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Slow speech speed, indicating a deliberate speaking pace.
+
+\large{\textbf{Dominant Emotions:}}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Emotional State]
+    \begin{enumerate}
+        \item \textbf{Top 1 Emotion:} \textcolor{blue!80!black}{Neutral}
+        \item \textbf{Top 2 Emotion:} \textcolor{red!80!black}{Fear}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} Predominantly neutral with some fear, reflecting a calm demeanor with occasional apprehension.
+
+\textbf{Comparative Analysis:}
+\begin{itemize}
+    \item \textbf{Strengths:}
+    \begin{itemize}
+        \item \textbf{Sentiment:} 5th in positive score, showing a generally positive outlook.
+        \item \textbf{Enthusiasm:} 7th highest, indicating a decent level of engagement.
+    \end{itemize}
+    \item \textbf{Weaknesses:}
+    \begin{itemize}
+        \item \textbf{Confidence Score:} 8th lowest, suggesting moderate self-assurance.
+        \item \textbf{Hesitant Score:} 4th highest, reflecting notable hesitation.
+        \item \textbf{Speech Speed:} 6th slowest, indicating a slower delivery pace.
+    \end{itemize}
+    \item \textbf{Areas of Expertise:}
+    \begin{itemize}
+        \item \textbf{Sentiment:} Balanced positive outlook with a moderate approach.
+        \item \textbf{Enthusiasm:} Decent level of engagement and energy.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Overall:} Student 8 has a balanced sentiment and moderate enthusiasm but should work on increasing confidence and managing hesitation to improve communication effectiveness.
+
+\subsection{Student 9}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
+
+\large{\textbf{Transcript Sentiment:}}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black, fonttitle=\bfseries, title=Sentiment Breakdown]
+    \begin{enumerate}
+        \item \textbf{Positive Score:} \textcolor{green!70!black}{0.617353}
+        \item \textbf{Negative Score:} \textcolor{red!70!black}{0.223949}
+        \item \textbf{Neutral Score:} \textcolor{blue!70!black}{0.158699}
+    \end{enumerate}
+\end{tcolorbox}
+
+\large{\textbf{Confidence and Hesitation:}}
+\begin{tcolorbox}[colback=green!10!white, colframe=green!80!black, title=Confidence and Hesitation Scores]
+    \begin{enumerate}
+        \item \textbf{Confidence Score:} \textcolor{green!50!black}{0.591842}
+        \item \textbf{Hesitation Score:} \textcolor{red!70!black}{0.538732}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The student demonstrates a fair level of confidence but a relatively high hesitation score, indicating some uncertainty or nervousness during their speech.
+
+\large{\textbf{Enthusiasm:}}
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!80!black, title=Enthusiastic Score]
+    \begin{enumerate}
+        \item \textbf{Enthusiastic Score:} \textcolor{orange!70!black}{0.505152}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The student shows moderate enthusiasm, reflecting a positive and engaging tone during their speech.
+
+\large{\textbf{Speech Speed:}}
+\begin{tcolorbox}[colback=purple!10!white, colframe=purple!80!black, title=Speech Speed]
+    \begin{enumerate}
+        \item \textbf{Speech Speed:} \textcolor{purple!70!black}{1.047063}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The student's speech speed is the fastest among all, which might be due to their high hesitation score, possibly rushing through points due to nervousness or time pressure.
+
+\large{\textbf{Dominant Emotions:}}
+\begin{tcolorbox}[colback=pink!10!white, colframe=pink!80!black, title=Emotional State]
+    \begin{enumerate}
+        \item \textbf{Top 1 Emotion:} \textcolor{blue!80!black}{Neutral}
+        \item \textbf{Top 2 Emotion:} \textcolor{red!80!black}{Happy}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The student’s emotional state is predominantly neutral with an undercurrent of happiness, indicating a generally balanced but somewhat positive demeanor.
+
+\textbf{Comparative Analysis:}
+\begin{itemize}
+    \item \textbf{Strengths:}
+    \begin{itemize}
+        \item \textbf{Positive Score:} 8th highest, showing a relatively positive outlook.
+        \item \textbf{Enthusiasm Score:} 6th highest, reflecting good engagement.
+    \end{itemize}
+    \item \textbf{Weaknesses:}
+    \begin{itemize}
+        \item \textbf{Hesitation Score:} 8th highest, indicating notable hesitation.
+        \item \textbf{Speech Speed:} Fastest among all, which may impact clarity.
+    \end{itemize}
+    \item \textbf{Areas of Expertise:}
+    \begin{itemize}
+        \item \textbf{Enthusiasm:} Moderate enthusiasm shows a positive tone in communication.
+        \item \textbf{Speed Management:} Needs to work on pacing to improve clarity.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Overall:} Student 9 displays a positive outlook and good enthusiasm but needs to address their hesitation and manage their fast speech pace to enhance overall communication effectiveness.
+
+\subsection{Student 10}
+\begin{center}
+    \color{green}\rule{1\linewidth}{0.7mm}
+\end{center}
+\large{\textbf{Transcript Sentiment:}}
+\begin{tcolorbox}[ colback=purple!5!white,colframe=purple!75!black,   fonttitle=\bfseries, title=Sentiment Breakdown]
+    \begin{enumerate}
+        \item \textbf{Positive Score:} \textcolor{green!70!black}{0.589267}
+        \item \textbf{Negative Score:} \textcolor{red!70!black}{0.220948}
+        \item \textbf{Neutral Score:} \textcolor{blue!70!black}{0.189785}
+    \end{tcolorbox}
+    \end{enumerate}
+
+\large{\textbf{Confidence and Hesitation:}}
+\begin{tcolorbox}[colback=green!10!white, colframe=green!80!black, title=Confidence and Hesitation Scores]
+    \begin{enumerate}
+        \item \textbf{Confidence Score:} \textcolor{green!50!black}{0.619852}
+        \item \textbf{Hesitation Score:} \textcolor{red!70!black}{0.520637}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The student shows a good level of confidence, but the relatively high hesitation score suggests some nervousness or uncertainty in parts of their speech.
+
+\large{\textbf{Enthusiasm:}}
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!80!black, title=Enthusiastic Score]
+    \begin{enumerate}
+        \item \textbf{Enthusiastic Score:} \textcolor{orange!70!black}{0.325507}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The enthusiasm score is moderate, indicating a somewhat positive and energetic delivery, but lacking in high energy.
+
+\large{\textbf{Speech Speed:}}
+\begin{tcolorbox}[colback=purple!10!white, colframe=purple!80!black, title=Speech Speed]
+    \begin{enumerate}
+        \item \textbf{Speech Speed:} \textcolor{purple!70!black}{0.809499}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The student speaks at a fast pace, which could be related to their higher hesitation score, possibly due to nervousness or pressure.
+
+\large{\textbf{Dominant Emotions:}}
+\begin{tcolorbox}[colback=pink!10!white, colframe=pink!80!black, title=Emotional State]
+    \begin{enumerate}
+        \item \textbf{Top 1 Emotion:} \textcolor{blue!80!black}{Sad}
+        \item \textbf{Top 2 Emotion:} \textcolor{red!80!black}{Fear}
+    \end{enumerate}
+\end{tcolorbox}
+    \textbf{Analysis:} The dominant emotions of sadness and fear suggest that the student may be experiencing emotional challenges or anxiety during their speech.
+
+\textbf{Comparative Analysis:}
+\begin{itemize}
+    \item \textbf{Strengths:}
+    \begin{itemize}
+        \item \textbf{Positive Score:} 9th highest, reflecting a generally positive outlook.
+        \item \textbf{Confidence Score:} 4th highest, indicating strong self-assurance.
+    \end{itemize}
+    \item \textbf{Weaknesses:}
+    \begin{itemize}
+        \item \textbf{Enthusiasm Score:} 10th lowest, showing the least engagement.
+        \item \textbf{Speech Speed:} 9th fastest, which may affect clarity.
+        \item \textbf{Emotional State:} Dominant sadness and fear indicating underlying emotional challenges.
+    \end{itemize}
+    \item \textbf{Areas of Expertise:}
+    \begin{itemize}
+        \item \textbf{Confidence:} High self-assurance in communication.
+        \item \textbf{Speed Management:} Effective pacing needed to improve clarity and reduce nervousness.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Overall:} Student 10 shows good confidence and a generally positive outlook but should focus on increasing enthusiasm, managing their speech speed, and addressing emotional challenges to improve communication effectiveness.
+
+
+
 
 % ... Continue for all students
 
