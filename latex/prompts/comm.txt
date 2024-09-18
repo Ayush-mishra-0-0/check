@@ -1,0 +1,6 @@
+I want to plot and find the relationship between following features, give with code and logic :-
+
+a)  relationship between conciseness and enthusiasm of the students.
+b)  relationship between avg_speech_speed and avg_hesitant and between avg_speech_speed and avg_confident.
+c)  relationship between all three text scores and confidence of the students.
+d)  Create a word cloud from the transcript to identify frequently used words and phrases.

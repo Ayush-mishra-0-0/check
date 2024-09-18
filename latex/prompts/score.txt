@@ -1,0 +1,24 @@
+I will assign a weighted score to each feature, where each feature's contribution to the final score is proportional to its importance for the role. The focus will be primarily on the transcript data, confidence, enthusiasm, and body language. Here’s how it can be structured:
+
+a. Transcript Data (40% of total score):
+Positive Transcript: +10 points for values ≥ 0.7, scaled down for lower values.
+Negative Transcript: -10 points for values ≥ 0.25, scaled down for lower values.
+Neutral Transcript: No direct impact, but consider it when evaluating other factors like enthusiasm.
+b. Confidence (20% of total score):
++10 points for values ≥ 0.7, scaled down for lower values.
+c. Hesitance (10% of total score):
+-10 points for values ≥ 0.5, scaled down for lower values.
+d. Enthusiasm (15% of total score):
++10 points for values ≥ 0.5, scaled down for lower values.
+e. Speech Speed (5% of total score):
+For values around 3.0, full score (e.g., ±0.5 around the mean). Deviations from the optimal speed reduce the score.
+f. Body Language (10% of total score):
+Gaze Score: +5 points for scores ≥ 0.8, scaled down for lower scores.
+Blink Sum: -5 points for blinks ≥ 20, scaled up for fewer blinks.
+Eye Offset: Penalties for extreme offsets (high deviation in gaze).
+3. Score Calculation
+Using this weighted framework, we will calculate the score for each student. The total score will then classify them into:
+
+Highly Fit for the Role: Score ≥ 75
+Okay for the Role: Score between 55 and 74
+Not Fit for the Role: Score < 55

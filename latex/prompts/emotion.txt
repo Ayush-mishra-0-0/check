@@ -1,0 +1,11 @@
+so in the data frame , i have eye_offset data of each frame of video of each student(10 total)
+which can be postive or negative .
+Answer this:
+How to use eye_offset for whole video for every student to find how much his eyes deviates??
+To determine the emotional Stability --how to achieve this
+
+To determine how the emotions are changing--means what is the variation over the video
+
+To Body Language Analysis on the basis of columns of gaze_df which are blink_sum, eye_offset, gaze_score.
+
+give a Framework to do all the above tasks

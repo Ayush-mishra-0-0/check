@@ -1,0 +1,61 @@
+Analysis of the 10 Students:
+1. Student 1:
+Emotional Intelligence: Moderate (neutral, fear)
+Communication Skills: Average (avg_confident = 0.733, avg_hesitant = 0.485)
+Engagement: Moderate (avg_enthusiastic = 0.429)
+Score: 19
+Recruitable: Borderline
+2. Student 2:
+Emotional Intelligence: High (happy, neutral)
+Communication Skills: Strong (avg_confident = 0.684, avg_hesitant = 0.436)
+Engagement: Good (avg_enthusiastic = 0.484)
+Score: 24
+Recruitable: Yes
+3. Student 3:
+Emotional Intelligence: Moderate (neutral, fear)
+Communication Skills: Average (avg_confident = 0.573, avg_hesitant = 0.604)
+Engagement: Moderate (avg_enthusiastic = 0.448)
+Score: 18
+Recruitable: No
+4. Student 4:
+Emotional Intelligence: Moderate (neutral, fear)
+Communication Skills: Above Average (avg_confident = 0.621, avg_hesitant = 0.570)
+Engagement: Good (avg_enthusiastic = 0.440)
+Score: 21
+Recruitable: Yes
+5. Student 5:
+Emotional Intelligence: High (neutral, neutral)
+Communication Skills: Strong (avg_confident = 0.590, avg_hesitant = 0.461)
+Engagement: Good (avg_enthusiastic = 0.378)
+Score: 22
+Recruitable: Yes
+6. Student 6:
+Emotional Intelligence: High (neutral, neutral)
+Communication Skills: Strong (avg_confident = 0.679, avg_hesitant = 0.490)
+Engagement: Good (avg_enthusiastic = 0.481)
+Score: 23
+Recruitable: Yes
+7. Student 7:
+Emotional Intelligence: Moderate (fear, sad)
+Communication Skills: Strong (avg_confident = 0.703, avg_hesitant = 0.457)
+Engagement: Moderate (avg_enthusiastic = 0.463)
+Score: 20
+Recruitable: Borderline
+8. Student 8:
+Emotional Intelligence: Moderate (neutral, fear)
+Communication Skills: Average (avg_confident = 0.555, avg_hesitant = 0.507)
+Engagement: Average (avg_enthusiastic = 0.437)
+Score: 18
+Recruitable: No
+9. Student 9:
+Emotional Intelligence: High (neutral, happy)
+Communication Skills: Strong (avg_confident = 0.591, avg_hesitant = 0.538)
+Engagement: Good (avg_enthusiastic = 0.505)
+Score: 23
+Recruitable: Yes
+10. Student 10:
+Emotional Intelligence: Moderate (sad, fear)
+Communication Skills: Average (avg_confident = 0.619, avg_hesitant = 0.520)
+Engagement: Weak (avg_enthusiastic = 0.325)
+Score: 18
+Recruitable: No
