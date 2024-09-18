@@ -309,25 +309,7 @@ Note: In the transcript data, the columns \textit{text}, \textit{tokens}, \texti
 
 
 
-\section{3. Data Preprocessing}
-  \begin{center}
-        \color{red}\rule{1\linewidth}{1mm}
-    \end{center}
-    
-\begin{tcolorbox}[colback=teal!5!white,colframe=teal!75!black,title= Steps for Data preprocessing]
-\textbf{The following steps were performed to preprocess the data before conducting any Exploratory Data Analysis (EDA):}
-
-\begin{itemize}
-    \item \textbf{Handling Missing Values:} Replaced missing or null values using techniques such as mean, median, or mode imputation based on the feature type.
-    \item \textbf{Encoding Categorical Features:} Converted categorical variables into numeric form using label encoding or one-hot encoding.
-    \item \textbf{Scaling and Normalization:} Applied standard scaling or min-max normalization to ensure that features with different units or ranges do not dominate the model's learning process.
-    % Add other preprocessing steps from the original document
-\end{itemize}
-\end{tcolorbox}
-
-
-
-\section{4. Data Preparation and Integration}
+\section{3. Data Preparation and Integration}
 
   \begin{center}
         \color{red}\rule{1\linewidth}{1mm}
@@ -366,6 +348,33 @@ So this is my new DATAFRAME , Let's call it \textsc{final\_df}
     
 \includegraphics[width=1/columnwidth]{}
 \end{center}
+
+\section{4. Data Preprocessing}
+  \begin{center}
+        \color{red}\rule{1\linewidth}{1mm}
+    \end{center}
+    
+\begin{tcolorbox}[colback=teal!5!white,colframe=teal!75!black,title= Steps for Data preprocessing]
+\textbf{The following steps were performed to preprocess the data before conducting any Exploratory Data Analysis (EDA):}
+
+\begin{itemize}
+    \item \textbf{Handling Missing Values:} Replaced missing or null values using techniques such as mean, median, or mode imputation based on the feature type.
+    \item \textbf{Encoding Categorical Features:} Converted categorical variables into numeric form using label encoding or one-hot encoding.
+    \item \textbf{Scaling and Normalization:} Applied standard scaling or min-max normalization to ensure that features with different units or ranges do not dominate the model's learning process.
+    % Add other preprocessing steps from the original document
+\end{itemize}
+\begin{center}
+    \includegraphics[width=1\columnwidth]{images_prompts/basic-stats.png}
+\end{center}
+
+\textbf{As we can from the image, following observations can be made:}
+\begin{itemize}
+    \item As the Count of all the features is 10, means there is not Null values.
+    \item The standard devaition of all the features is also very low compared to the mean, indicating that the data is not spread out(low chances of outliers).
+    \item As i have already done the encoding of the categorical features, so no need to do it again.
+\end{itemize}
+
+\end{tcolorbox}
 
 
 \section{5. Advanced Analysis}
@@ -774,6 +783,27 @@ His expertise, communication skills, emotional intelligence, and body language a
             \item \textbf{Emotional Stability:} The neutral tone suggests good emotional control, although the presence of fear may indicate some anxiety.
         \end{itemize}
     \end{tcolorbox}
+\textbf{Student 1: Comparative Analysis}
+\begin{itemize}
+    \item \textbf{Strengths:}
+    \begin{itemize}
+        \item \textbf{Confidence Score:} Highest among all students, indicating strong self-assurance and control during speech (0.733828).
+        \item \textbf{Positive Sentiment:} 2nd highest positive score (0.709199), indicating a mostly optimistic and upbeat tone.
+        \item \textbf{Speech Speed:} Moderately slow pace (0.416344), which helps in clarity and audience comprehension.
+    \end{itemize}
+    \item \textbf{Weaknesses:}
+    \begin{itemize}
+        \item \textbf{Hesitation Score:} Slightly high (0.485172), suggesting occasional pauses or uncertainty in speech delivery.
+        \item \textbf{Enthusiasm Score:} On the lower side (0.466497), which may reduce audience engagement and energy.
+    \end{itemize}
+    \item \textbf{Areas of Expertise:}
+    \begin{itemize}
+        \item \textbf{Confidence:} Excellent control over speech, useful in leadership and formal presentations.
+        \item \textbf{Clear Communication:} Balanced speech pace with minimal rush, ensuring clarity of ideas.
+    \end{itemize}
+\end{itemize}
+
+
 
 
 \subsection{Student 2}
@@ -837,6 +867,26 @@ His expertise, communication skills, emotional intelligence, and body language a
         \item \textbf{Top 2 Emotion:} \textcolor{red!80!black}{Neutral}
     \end{enumerate}
 \end{tcolorbox}
+
+\textbf{Student 2: Comparative Analysis}
+\begin{itemize}
+    \item \textbf{Strengths:}
+    \begin{itemize}
+        \item \textbf{Positive Sentiment:} Highest among all students (0.722006), reflecting a highly positive and enthusiastic tone.
+        \item \textbf{Enthusiasm Score:} Highest among the group (0.516685), showing an energetic and engaging delivery.
+        \item \textbf{Confidence Score:} 3rd highest (0.684879), indicating a strong but slightly lower confidence than Student 1.
+    \end{itemize}
+    \item \textbf{Weaknesses:}
+    \begin{itemize}
+        \item \textbf{Speech Speed:} Fastest among all students (0.869530), which might make it difficult for the audience to follow.
+        \item \textbf{Hesitation Score:} Moderate (0.436158), showing occasional signs of uncertainty.
+    \end{itemize}
+    \item \textbf{Areas of Expertise:}
+    \begin{itemize}
+        \item \textbf{Enthusiasm:} High energy levels make Student 2's speech engaging, useful in persuasive or motivational settings.
+        \item \textbf{Positive Outlook:} The optimistic tone is effective in inspiring confidence and connection with the audience.
+    \end{itemize}
+\end{itemize}
     \textbf{Analysis:} The student's emotional state is predominantly happy, with some underlying neutral present.
 
 \subsection{Student 3}

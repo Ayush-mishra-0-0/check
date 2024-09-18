@@ -1,0 +1,38 @@
+import pandas as pd
+import os
+
+# Path to the folder containing emotion data
+folder_path = 'emotion_data'
+
+# Initialize an empty dictionary to store top 2 dominant emotions for each student
+dominant_emotions = {'student_top1': [], 'student_top2': []}
+
+# Iterate over all files in the folder (assuming 10 files: emotion-df1.csv to emotion-df10.csv)
+for i in range(1, 11):
+    file_name = f'{i}/emotion.csv'
+    file_path = os.path.join(folder_path, file_name)
+    
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(file_path)
+    
+    # Find the 2 most frequent dominant emotions
+    top_emotions = df['dominant_emotion'].value_counts().nlargest(2).index.tolist()
+    
+    # Append the top 2 emotions for this student (add NaN if there's less than 2 emotions)
+    dominant_emotions['student_top1'].append(top_emotions[0] if len(top_emotions) > 0 else None)
+    dominant_emotions['student_top2'].append(top_emotions[1] if len(top_emotions) > 1 else None)
+
+# Create a DataFrame for top emotions for every student
+df_dominantEmotion_for_everystudent = pd.DataFrame(dominant_emotions)
+
+# Rename columns to reflect student numbers correctly (top1 and top2)
+df_dominantEmotion_for_everystudent.columns = [
+    f'student_{i}_dominant_emotion_top1' if 'top1' in col else f'student_{i}_dominant_emotion_top2'
+    for i, col in enumerate(df_dominantEmotion_for_everystudent.columns, start=1)
+]
+
+# Set index to range from 1 to 10
+df_dominantEmotion_for_everystudent.index = range(1, 11)
+
+# Print the final DataFrame
+print(df_dominantEmotion_for_everystudent)

@@ -1,6 +1,76 @@
-change student1 and student2
+change student1 and student2 -- done
 add score table of all students
 add wordblob of all students
 add short section of all results in start
 conclusion and dasu ending
 some grouping images from website like confident groups and non- confident groups
+
+Data Overview and Preprocessing:
+
+Load and inspect the data structure
+Check for missing values and handle them appropriately
+Ensure data types are correct (e.g., numeric for scores, categorical for emotions)
+
+
+Descriptive Statistics:
+
+Calculate basic statistics (mean, median, std dev, min, max) for numerical columns
+Compute frequency distributions for categorical variables (e.g., dominant_emotion)
+
+
+Emotion Analysis:
+
+Analyze the distribution of dominant emotions across candidates
+Calculate average scores for each emotion
+Identify candidates with notably high or low scores in specific emotions
+
+
+Gaze and Blink Analysis:
+
+Calculate the percentage of time candidates maintain eye contact (gaze == 1)
+Analyze blink frequency and its correlation with other variables
+
+
+Transcript Analysis:
+
+Analyze speech duration for each candidate
+Calculate average scores for positive, negative, neutral sentiments
+Examine confidence, hesitance, conciseness, and enthusiasm scores
+
+
+Time-based Analysis:
+
+Plot emotion scores over time to identify trends or patterns
+Analyze how speech characteristics change throughout the introduction
+
+
+Correlation Analysis:
+
+Create a correlation matrix to identify relationships between variables
+Look for interesting correlations, e.g., between emotion scores and speech characteristics
+
+
+Visualization:
+
+Create bar charts for emotion distributions
+Use line plots to show score changes over time
+Generate heatmaps for correlation analysis
+Use scatter plots to explore relationships between variables
+
+
+Text Analysis:
+
+Perform basic text analysis on transcripts (word frequency, key phrases)
+Analyze speech speed and its correlation with other variables
+
+
+Candidate Comparison:
+
+Create summary profiles for each candidate based on their scores
+Identify top performers in different categories (e.g., most confident, most positive)
+
+
+Insight Generation:
+
+Based on the analysis, formulate insights about each candidate's strengths and weaknesses
+Identify patterns that might indicate suitability for recruitment

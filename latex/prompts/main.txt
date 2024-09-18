@@ -1,0 +1,14 @@
+now probelm statement is
+In this task, you will work with a dataset of 10 candidates containing emotion scores, transcript scores, and the corresponding transcripts extracted from their introduction videos. Your goal is to use the ChatGPT with your prompt engineering skills along with performing Exploratory Data Analysis (EDA) on the data provided, to generate valuable and actionable insights from the data. 
+Actionable insights include:
+1. Can we recruit the candidate or not? With suitable reasons from the data.
+2. Analysis of communication skills and finding areas of expertise based on data.
+3. Any other insights which help us make decision about the candidate are also welcomed.
+This task is designed to assess your ability to preprocess data, create effective prompts, and perform EDA to extract meaningful and actionable information.
+
+Main flow should be like this:
+- give plots idea to perform some exploratory data analysis (EDA) on the datasets.
+- how to analysis to generate insights about each candidate.
+- recommendations based on those insights.
+- Finally give a scoring mechanism to rank the students
+- Any other insights is welcomed.

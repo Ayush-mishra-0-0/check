@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  17 SEP 2024 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  18 SEP 2024 17:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1296,15 +1296,10 @@ Package tabularray Warning: Table width is too small, need 297.7231pt more!
 Package tabularray Warning: Table width is too small, need 390.27905pt more!
 
 > Step: build the whole table.
-LaTeX Font Info:    Trying to load font information for TS1+Roboto-LF on input line 321.
-(c:/texlive/2024/texmf-dist/tex/latex/roboto/TS1Roboto-LF.fd
-File: TS1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for TS1/Roboto-LF.
-)
-LaTeX Font Info:    Font shape `TS1/Roboto-LF/l/n' aliased to
-(Font)              `TS1/Roboto-LF/light/n' on input line 321.
-LaTeX Font Info:    Font shape `TS1/Roboto-LF/light/n' will be
-(Font)              scaled to size 13.0pt on input line 321.
 
+Overfull \hbox (2.77486pt too wide) in paragraph at lines 312--312
+|[]\T1/Roboto-LF/bold/n/32.34409 3. Data Prepa-ra-tion and In-te-gra-
+ []
 
 c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:327: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
@@ -1339,53 +1334,16 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 327.
 
 [5]
-Overfull \hbox (2.77486pt too wide) in paragraph at lines 330--330
-|[]\T1/Roboto-LF/bold/n/32.34409 4. Data Prepa-ra-tion and In-te-gra-
- []
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:351: Undefined control sequence.
-\f@nch@olh ...olor {primaryColor}\assignmentClass 
-                                                  \ifdef {\assignmentClassIn...
-l.351 
-      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:351: Undefined control sequence.
-\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
-                                                  \strut 
-l.351 
-      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 25.56444pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.56444pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
-
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 351.
-
-[6{c:/texlive/2024/texmf-dist/fonts/enc/dvips/roboto/rbto_ocbbsb.enc}]
-Underfull \hbox (badness 6927) in paragraph at lines 356--357
+Underfull \hbox (badness 6927) in paragraph at lines 338--339
 \T1/Roboto-LF/bold/n/13 quan-ti-ta-tive data \T1/Roboto-LF/light/n/13 (like pos-i-tiv-ity
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:362: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:344: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.362 \newpage
+l.344 \newpage
               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1393,10 +1351,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:362: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:344: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.362 \newpage
+l.344 \newpage
               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1412,49 +1370,98 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 362.
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 344.
 
-[7]
+[6]
 LaTeX Font Info:    Font shape `T1/Roboto-LF/l/sc' aliased to
-(Font)              `T1/Roboto-LF/light/sc' on input line 364.
+(Font)              `T1/Roboto-LF/light/sc' on input line 346.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/light/sc' will be
-(Font)              scaled to size 13.0pt on input line 364.
+(Font)              scaled to size 13.0pt on input line 346.
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:367: LaTeX Error: File `' not found.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:349: LaTeX Error: File `' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.367 \includegraphics[width=1/columnwidth]{}
+l.349 \includegraphics[width=1/columnwidth]{}
                                              
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<images/corr_matrix_of_final_data.png, id=59, 1037.8775pt x 799.98875pt>
+LaTeX Font Info:    Trying to load font information for TS1+Roboto-LF on input line 361.
+(c:/texlive/2024/texmf-dist/tex/latex/roboto/TS1Roboto-LF.fd
+File: TS1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for TS1/Roboto-LF.
+)
+LaTeX Font Info:    Font shape `TS1/Roboto-LF/l/n' aliased to
+(Font)              `TS1/Roboto-LF/light/n' on input line 361.
+LaTeX Font Info:    Font shape `TS1/Roboto-LF/light/n' will be
+(Font)              scaled to size 13.0pt on input line 361.
+<images_prompts/basic-stats.png, id=52, 1169.36874pt x 315.1775pt>
+File: images_prompts/basic-stats.png Graphic file (type png)
+<use images_prompts/basic-stats.png>
+Package pdftex.def Info: images_prompts/basic-stats.png  used on input line 367.
+(pdftex.def)             Requested size: 423.94617pt x 114.26695pt.
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:382: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.382         \color{red}\rule{1\linewidth}{1mm}
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:382: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.382         \color{red}\rule{1\linewidth}{1mm}
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 382.
+
+[7{c:/texlive/2024/texmf-dist/fonts/enc/dvips/roboto/rbto_shbyjm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/roboto/rbto_ocbbsb.enc} <./images_prompts/basic-stats.png>]
+<images/corr_matrix_of_final_data.png, id=64, 1037.8775pt x 799.98875pt>
 File: images/corr_matrix_of_final_data.png Graphic file (type png)
 <use images/corr_matrix_of_final_data.png>
-Package pdftex.def Info: images/corr_matrix_of_final_data.png  used on input line 377.
+Package pdftex.def Info: images/corr_matrix_of_final_data.png  used on input line 386.
 (pdftex.def)             Requested size: 455.24411pt x 350.89752pt.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:378: LaTeX Error: \caption outside float.
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:387: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.378     \caption
+l.387     \caption
                   {}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:378: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:387: Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.378     \caption
+l.387     \caption
                   {}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1462,10 +1469,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:378: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:387: Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.378     \caption
+l.387     \caption
                   {}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1475,10 +1482,10 @@ and I'll forget about whatever was undefined.
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:398: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:407: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.398 
+l.407 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1486,10 +1493,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:398: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:407: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.398 
+l.407 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1505,25 +1512,25 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 398.
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 407.
 
-[8{c:/texlive/2024/texmf-dist/fonts/enc/dvips/roboto/rbto_shbyjm.enc} <./images/corr_matrix_of_final_data.png (PNG copy)>]
-<images/avg_positve_distribution.png, id=66, 1032.85875pt x 392.21532pt>
+[8 <./images/corr_matrix_of_final_data.png (PNG copy)>]
+<images/avg_positve_distribution.png, id=69, 1032.85875pt x 392.21532pt>
 File: images/avg_positve_distribution.png Graphic file (type png)
 <use images/avg_positve_distribution.png>
-Package pdftex.def Info: images/avg_positve_distribution.png  used on input line 404.
+Package pdftex.def Info: images/avg_positve_distribution.png  used on input line 413.
 (pdftex.def)             Requested size: 364.19667pt x 138.3008pt.
-<images/speech_speed_vs_hesitant.png, id=68, 1028.34187pt x 412.54124pt>
+<images/speech_speed_vs_hesitant.png, id=70, 1028.34187pt x 412.54124pt>
 File: images/speech_speed_vs_hesitant.png Graphic file (type png)
 <use images/speech_speed_vs_hesitant.png>
-Package pdftex.def Info: images/speech_speed_vs_hesitant.png  used on input line 412.
+Package pdftex.def Info: images/speech_speed_vs_hesitant.png  used on input line 421.
 (pdftex.def)             Requested size: 364.19667pt x 146.10379pt.
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:416: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:425: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.416 
+l.425 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1531,10 +1538,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:416: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:425: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.416 
+l.425 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1550,39 +1557,39 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 416.
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 425.
 
 [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.416 
+l.425 
        <./images/avg_positve_distribution.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
 
  []
 
-<images/joinplot_between_avg_enthusiatic_and_avg_concise.png, id=75, 600.2425pt x 592.2125pt>
+<images/joinplot_between_avg_enthusiatic_and_avg_concise.png, id=77, 600.2425pt x 592.2125pt>
 File: images/joinplot_between_avg_enthusiatic_and_avg_concise.png Graphic file (type png)
 <use images/joinplot_between_avg_enthusiatic_and_avg_concise.png>
-Package pdftex.def Info: images/joinplot_between_avg_enthusiatic_and_avg_concise.png  used on input line 433.
+Package pdftex.def Info: images/joinplot_between_avg_enthusiatic_and_avg_concise.png  used on input line 442.
 (pdftex.def)             Requested size: 204.85846pt x 202.11768pt.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:434: LaTeX Error: \caption outside float.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:443: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.434         \caption
+l.443         \caption
                       {Joint plot between avg\_enthusiastic and avg\_concise.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:434: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:443: Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.434         \caption
+l.443         \caption
                       {Joint plot between avg\_enthusiastic and avg\_concise.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1590,10 +1597,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:434: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:443: Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.434         \caption
+l.443         \caption
                       {Joint plot between avg\_enthusiastic and avg\_concise.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1601,27 +1608,27 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<images/concise_confi.png, id=76, 729.927pt x 505.1673pt>
+<images/concise_confi.png, id=78, 729.927pt x 505.1673pt>
 File: images/concise_confi.png Graphic file (type png)
 <use images/concise_confi.png>
-Package pdftex.def Info: images/concise_confi.png  used on input line 438.
+Package pdftex.def Info: images/concise_confi.png  used on input line 447.
 (pdftex.def)             Requested size: 204.85846pt x 141.77733pt.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:439: LaTeX Error: \caption outside float.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:448: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.439         \caption
+l.448         \caption
                       {Scatter plot between avg\_speech\_speed and avg\_hesi...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:439: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:448: Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.439         \caption
+l.448         \caption
                       {Scatter plot between avg\_speech\_speed and avg\_hesi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1629,10 +1636,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:439: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:448: Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.439         \caption
+l.448         \caption
                       {Scatter plot between avg\_speech\_speed and avg\_hesi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1641,21 +1648,21 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:441: LaTeX Error: \caption outside float.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:450: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.441     \caption
+l.450     \caption
                   {Comparison of conciseness vs enthusiasm and confidence.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:441: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:450: Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.441     \caption
+l.450     \caption
                   {Comparison of conciseness vs enthusiasm and confidence.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1663,10 +1670,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:441: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:450: Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.441     \caption
+l.450     \caption
                   {Comparison of conciseness vs enthusiasm and confidence.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1675,16 +1682,16 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:446: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:455: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.446     T
+l.455     T
            he plot reveals a negative correlation between these two features...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1692,10 +1699,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:446: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:455: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.446     T
+l.455     T
            he plot reveals a negative correlation between these two features...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1711,36 +1718,36 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 446.
+LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 455.
 
 [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.446     T
+l.455     T
            he plot reveals a negative correlation between these two features... <./images/speech_speed_vs_hesitant.png> <./images/joinplot_between_avg_enthusiatic_and_avg_concise.png> <./images/concise_confi.png>]
-<images/speech_confi.png, id=85, 729.927pt x 505.1673pt>
+<images/speech_confi.png, id=87, 729.927pt x 505.1673pt>
 File: images/speech_confi.png Graphic file (type png)
 <use images/speech_confi.png>
-Package pdftex.def Info: images/speech_confi.png  used on input line 450.
+Package pdftex.def Info: images/speech_confi.png  used on input line 459.
 (pdftex.def)             Requested size: 204.85846pt x 141.77733pt.
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:451: LaTeX Error: \caption outside float.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:460: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.451             \caption
+l.460             \caption
                           {Scatter plot between avg\_speech\_speed and avg\_...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:451: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:460: Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.451             \caption
+l.460             \caption
                           {Scatter plot between avg\_speech\_speed and avg\_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1748,10 +1755,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:451: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:460: Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.451             \caption
+l.460             \caption
                           {Scatter plot between avg\_speech\_speed and avg\_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1759,27 +1766,27 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<images/avg_speech_speed_vs_avg_hesitant.png, id=86, 609.27625pt x 592.2125pt>
+<images/avg_speech_speed_vs_avg_hesitant.png, id=88, 609.27625pt x 592.2125pt>
 File: images/avg_speech_speed_vs_avg_hesitant.png Graphic file (type png)
 <use images/avg_speech_speed_vs_avg_hesitant.png>
-Package pdftex.def Info: images/avg_speech_speed_vs_avg_hesitant.png  used on input line 455.
+Package pdftex.def Info: images/avg_speech_speed_vs_avg_hesitant.png  used on input line 464.
 (pdftex.def)             Requested size: 204.85846pt x 199.11758pt.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:456: LaTeX Error: \caption outside float.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:465: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.456             \caption
+l.465             \caption
                           {Scatter plot between avg\_speech\_speed and avg\_...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:456: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:465: Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.456             \caption
+l.465             \caption
                           {Scatter plot between avg\_speech\_speed and avg\_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1787,10 +1794,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:456: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:465: Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.456             \caption
+l.465             \caption
                           {Scatter plot between avg\_speech\_speed and avg\_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1798,19 +1805,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:457: Missing number, treated as zero.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:466: Missing number, treated as zero.
 <to be read again> 
                    }
-l.457         \end{minipage}{0.45\textwidth}
+l.466         \end{minipage}{0.45\textwidth}
                                             
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:457: Illegal unit of measure (pt inserted).
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:466: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.457         \end{minipage}{0.45\textwidth}
+l.466         \end{minipage}{0.45\textwidth}
                                             
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1820,75 +1827,26 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
-
- []
-
-<images/scatter_plot_avgPositve_and_avg_confident_avg_enthusiatist.png, id=87, 723.4227pt x 505.1673pt>
-File: images/scatter_plot_avgPositve_and_avg_confident_avg_enthusiatist.png Graphic file (type png)
-<use images/scatter_plot_avgPositve_and_avg_confident_avg_enthusiatist.png>
-Package pdftex.def Info: images/scatter_plot_avgPositve_and_avg_confident_avg_enthusiatist.png  used on input line 465.
-(pdftex.def)             Requested size: 455.24411pt x 317.9025pt.
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 465--466
- [] 
- []
-
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:466: Undefined control sequence.
-\f@nch@olh ...olor {primaryColor}\assignmentClass 
-                                                  \ifdef {\assignmentClassIn...
-l.466     \end{center}
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:466: Undefined control sequence.
-\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
-                                                  \strut 
-l.466     \end{center}
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 25.56444pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.56444pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
-
-
-LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 466.
-
-[11 <./images/speech_confi.png> <./images/avg_speech_speed_vs_avg_hesitant.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 469--470
 
  []
 
-<images/avgNeg_conf.png, id=93, 729.927pt x 505.1673pt>
-File: images/avgNeg_conf.png Graphic file (type png)
-<use images/avgNeg_conf.png>
-Package pdftex.def Info: images/avgNeg_conf.png  used on input line 476.
-(pdftex.def)             Requested size: 455.24411pt x 315.06587pt.
+<images/scatter_plot_avgPositve_and_avg_confident_avg_enthusiatist.png, id=89, 723.4227pt x 505.1673pt>
+File: images/scatter_plot_avgPositve_and_avg_confident_avg_enthusiatist.png Graphic file (type png)
+<use images/scatter_plot_avgPositve_and_avg_confident_avg_enthusiatist.png>
+Package pdftex.def Info: images/scatter_plot_avgPositve_and_avg_confident_avg_enthusiatist.png  used on input line 474.
+(pdftex.def)             Requested size: 455.24411pt x 317.9025pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 476--477
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 474--475
  [] 
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:477: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:475: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.477     \end{center}
+l.475     \end{center}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1896,10 +1854,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:477: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:475: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.477     \end{center}
+l.475     \end{center}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1915,17 +1873,66 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 477.
+LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 475.
+
+[11 <./images/speech_confi.png> <./images/avg_speech_speed_vs_avg_hesitant.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+<images/avgNeg_conf.png, id=95, 729.927pt x 505.1673pt>
+File: images/avgNeg_conf.png Graphic file (type png)
+<use images/avgNeg_conf.png>
+Package pdftex.def Info: images/avgNeg_conf.png  used on input line 485.
+(pdftex.def)             Requested size: 455.24411pt x 315.06587pt.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 485--486
+ [] 
+ []
+
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:486: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.486     \end{center}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:486: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.486     \end{center}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 486.
 
 [12 <./images/scatter_plot_avgPositve_and_avg_confident_avg_enthusiatist.png>]
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:489: Package tikz Error: A node must have a (possibly empty) label text.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:498: Package tikz Error: A node must have a (possibly empty) label text.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.489           \end
+l.498           \end
                     {scope}
 This error message was generated by an \errmessage
 command, so I can't give any explicit help.
@@ -1933,76 +1940,76 @@ Pretend that you're Hercule Poirot: Examine all clues,
 and deduce the truth by order and method.
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:489: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:498: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.489           \end{scope}
+l.498           \end{scope}
                            
 (That was another \errmessage.)
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:499: Package tikz Error: A node must have a (possibly empty) label text.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:508: Package tikz Error: A node must have a (possibly empty) label text.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.499           \end
+l.508           \end
                     {scope}
 (That was another \errmessage.)
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:499: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:508: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.499           \end{scope}
+l.508           \end{scope}
                            
 (That was another \errmessage.)
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:509: Package tikz Error: A node must have a (possibly empty) label text.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:518: Package tikz Error: A node must have a (possibly empty) label text.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.509           \end
+l.518           \end
                     {scope}
 (That was another \errmessage.)
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:509: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:518: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.509           \end{scope}
+l.518           \end{scope}
                            
 (That was another \errmessage.)
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:512: LaTeX Error: \caption outside float.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:521: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.512       \caption
+l.521       \caption
                     {Correlation Diagram for Text Scores with Confidence and...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:512: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:521: Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.512       \caption
+l.521       \caption
                     {Correlation Diagram for Text Scores with Confidence and...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2010,10 +2017,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:512: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:521: Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.512       \caption
+l.521       \caption
                     {Correlation Diagram for Text Scores with Confidence and...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2023,10 +2030,10 @@ and I'll forget about whatever was undefined.
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:527: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:536: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.527     \color{green}\rule{1\linewidth}{0.7mm}
+l.536     \color{green}\rule{1\linewidth}{0.7mm}
                                                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2034,10 +2041,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:527: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:536: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.527     \color{green}\rule{1\linewidth}{0.7mm}
+l.536     \color{green}\rule{1\linewidth}{0.7mm}
                                                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2053,94 +2060,94 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 527.
+LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 536.
 
 [13 <./images/avgNeg_conf.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 530--532
+Underfull \hbox (badness 10000) in paragraph at lines 539--541
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--535
+Underfull \hbox (badness 10000) in paragraph at lines 542--544
 
  []
 
-<images/emotion_intensity_over_time.png, id=107, 1018.55531pt x 384.6872pt>
+<images/emotion_intensity_over_time.png, id=109, 1018.55531pt x 384.6872pt>
 File: images/emotion_intensity_over_time.png Graphic file (type png)
 <use images/emotion_intensity_over_time.png>
-Package pdftex.def Info: images/emotion_intensity_over_time.png  used on input line 542.
+Package pdftex.def Info: images/emotion_intensity_over_time.png  used on input line 551.
 (pdftex.def)             Requested size: 455.24411pt x 171.93953pt.
 Runaway argument?
 {This student has shown a \textbf {high level of emotional stability}\ETC.
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:550: Paragraph ended before \text@command was complete.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:559: Paragraph ended before \text@command was complete.
 <to be read again> 
                    \par 
-l.550 }
+l.559 }
        
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--550
+Underfull \hbox (badness 10000) in paragraph at lines 559--559
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 550.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 559.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <13> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 550.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 559.
 
-Overfull \hbox (10.805pt too wide) in paragraph at lines 550--550
+Overfull \hbox (10.805pt too wide) in paragraph at lines 559--559
 \T1/lmtt/m/n/13 This student has shown a \T1/lmtt/b/n/13 high level of emotional stability \T1/lmtt/m/n/13 throughout
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--550
+Underfull \hbox (badness 10000) in paragraph at lines 559--559
 
  []
 
 
-Overfull \hbox (19.71573pt too wide) in paragraph at lines 550--550
+Overfull \hbox (19.71573pt too wide) in paragraph at lines 559--559
 []\T1/lmtt/m/n/13 There is slight moment in between where the student is showing fear and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--550
+Underfull \hbox (badness 10000) in paragraph at lines 559--559
 
  []
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:550: Too many }'s.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:559: Too many }'s.
 <recently read> \egroup 
                         
-l.550 }
+l.559 }
        
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
 
-Overfull \hbox (13.02615pt too wide) in paragraph at lines 550--552
+Overfull \hbox (13.02615pt too wide) in paragraph at lines 559--561
 []\T1/lmtt/m/n/13 This indicates that he is able to maintain a consistent emotional tone
  []
 
 
-Overfull \hbox (13.02615pt too wide) in paragraph at lines 550--552
+Overfull \hbox (13.02615pt too wide) in paragraph at lines 559--561
 \T1/lmtt/m/n/13 (which is neutral) during communication, which is a positive trait for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--552
+Underfull \hbox (badness 10000) in paragraph at lines 559--561
 
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:552: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:561: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.552 
+l.561 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2148,10 +2155,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:552: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:561: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.552 
+l.561 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2167,49 +2174,49 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 552.
+LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 561.
 
 [14{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./images/emotion_intensity_over_time.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
+Underfull \hbox (badness 10000) in paragraph at lines 566--567
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
 
  []
 
-<images/emotion_variablity.png, id=116, 999.735pt x 389.20406pt>
+<images/emotion_variablity.png, id=118, 999.735pt x 389.20406pt>
 File: images/emotion_variablity.png Graphic file (type png)
 <use images/emotion_variablity.png>
-Package pdftex.def Info: images/emotion_variablity.png  used on input line 561.
+Package pdftex.def Info: images/emotion_variablity.png  used on input line 570.
 (pdftex.def)             Requested size: 455.24411pt x 177.23065pt.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:564: LaTeX Error: \caption outside float.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:573: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.564 \caption
+l.573 \caption
               {Like in this graph, we can see that except student 5 and 6, a...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:564: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:573: Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.564 \caption
+l.573 \caption
               {Like in this graph, we can see that except student 5 and 6, a...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2217,10 +2224,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:564: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:573: Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.564 \caption
+l.573 \caption
               {Like in this graph, we can see that except student 5 and 6, a...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2229,21 +2236,21 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--569
+Underfull \hbox (badness 10000) in paragraph at lines 576--578
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--577
+Underfull \hbox (badness 10000) in paragraph at lines 584--586
 
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:579: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:588: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.579         \end{enumerate}
+l.588         \end{enumerate}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2251,10 +2258,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:579: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:588: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.579         \end{enumerate}
+l.588         \end{enumerate}
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2270,29 +2277,29 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 579.
+LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 588.
 
 [15 <./images/emotion_variablity.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 583--585
+Underfull \hbox (badness 10000) in paragraph at lines 592--594
 
  []
 
-<images/gaze_mean.png, id=122, 835.4412pt x 505.1673pt>
+<images/gaze_mean.png, id=124, 835.4412pt x 505.1673pt>
 File: images/gaze_mean.png Graphic file (type png)
 <use images/gaze_mean.png>
-Package pdftex.def Info: images/gaze_mean.png  used on input line 587.
+Package pdftex.def Info: images/gaze_mean.png  used on input line 596.
 (pdftex.def)             Requested size: 455.24411pt x 275.26833pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 607--609
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
 
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:610: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:619: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.610 I
+l.619 I
        f a student blinks too frequently, it may suggest nervousness or disc...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2300,10 +2307,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:610: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:619: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.610 I
+l.619 I
        f a student blinks too frequently, it may suggest nervousness or disc...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2319,110 +2326,110 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 610.
+LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 619.
 
 [16 <./images/gaze_mean.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 610--611
+Underfull \hbox (badness 10000) in paragraph at lines 619--620
 
  []
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:614: Missing $ inserted.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:623: Missing $ inserted.
 <inserted text> 
                 $
-l.614 ...me of video, i have to divided the blink_
+l.623 ...me of video, i have to divided the blink_
                                                   sum with total frames of t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:615: Missing $ inserted.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:624: Missing $ inserted.
 <inserted text> 
                 $
-l.615 
+l.624 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
+Underfull \hbox (badness 10000) in paragraph at lines 623--624
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
+Underfull \hbox (badness 10000) in paragraph at lines 625--626
 
  []
 
-<images/blink.png, id=132, 832.5504pt x 505.1673pt>
+<images/blink.png, id=134, 832.5504pt x 505.1673pt>
 File: images/blink.png Graphic file (type png)
 <use images/blink.png>
-Package pdftex.def Info: images/blink.png  used on input line 622.
+Package pdftex.def Info: images/blink.png  used on input line 631.
 (pdftex.def)             Requested size: 455.24411pt x 276.23184pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 639--640
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 641--643
-
- []
-
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:643: Undefined control sequence.
-\f@nch@olh ...olor {primaryColor}\assignmentClass 
-                                                  \ifdef {\assignmentClassIn...
-l.643 
-      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:643: Undefined control sequence.
-\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
-                                                  \strut 
-l.643 
-      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 25.56444pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.56444pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
-
-
-LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 643.
-
-[17{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./images/blink.png>]
-<images/eye_offset.png, id=142, 1004.553pt x 426.393pt>
-File: images/eye_offset.png Graphic file (type png)
-<use images/eye_offset.png>
-Package pdftex.def Info: images/eye_offset.png  used on input line 645.
-(pdftex.def)             Requested size: 455.24411pt x 193.23486pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 648--649
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--656
+Underfull \hbox (badness 10000) in paragraph at lines 650--652
 
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:680: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:652: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.680         \end{itemize}
+l.652 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:652: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.652 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 652.
+
+[17{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./images/blink.png>]
+<images/eye_offset.png, id=144, 1004.553pt x 426.393pt>
+File: images/eye_offset.png Graphic file (type png)
+<use images/eye_offset.png>
+Package pdftex.def Info: images/eye_offset.png  used on input line 654.
+(pdftex.def)             Requested size: 455.24411pt x 193.23486pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--665
+
+ []
+
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:689: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.689         \end{itemize}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2430,10 +2437,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:680: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:689: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.680         \end{itemize}
+l.689         \end{itemize}
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2449,27 +2456,27 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 680.
+LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 689.
 
 [18 <./images/eye_offset.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 715--717
+Underfull \hbox (badness 10000) in paragraph at lines 724--726
 
  []
 
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 721.
+(Font)              `T1/Roboto-LF/bold/n' on input line 730.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 15.59996pt on input line 721.
+(Font)              scaled to size 15.59996pt on input line 730.
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/l/n' aliased to
-(Font)              `TS1/Roboto-LF/light/n' on input line 739.
+(Font)              `TS1/Roboto-LF/light/n' on input line 748.
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/light/n' will be
-(Font)              scaled to size 15.59996pt on input line 739.
+(Font)              scaled to size 15.59996pt on input line 748.
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:743: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:752: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.743 
+l.752 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2477,10 +2484,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:743: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:752: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.743 
+l.752 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2496,26 +2503,26 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 743.
+LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 752.
 
 [19]
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:777: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:786: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.777 
-      
+l.786 \textbf{Student 1: Comparative Analysis}
+                                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:777: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:786: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.777 
-      
+l.786 \textbf{Student 1: Comparative Analysis}
+                                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2530,65 +2537,31 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 20 undefined on input line 777.
+LaTeX Warning: Reference `LastPage' on page 20 undefined on input line 786.
 
 [20]
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:825: Undefined control sequence.
-\f@nch@olh ...olor {primaryColor}\assignmentClass 
-                                                  \ifdef {\assignmentClassIn...
-l.825 \large{\textbf{Speech Speed:}
-                                   }
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:825: Undefined control sequence.
-\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
-                                                  \strut 
-l.825 \large{\textbf{Speech Speed:}
-                                   }
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 25.56444pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.56444pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
-
-
-LaTeX Warning: Reference `LastPage' on page 21 undefined on input line 825.
-
-[21]
-Overfull \hbox (1.99336pt too wide) in paragraph at lines 840--841
-[]\T1/Roboto-LF/bold/n/15.59996 Analysis: \T1/Roboto-LF/light/n/15.59996 The stu-dent's emo-tional state is pre-dom-i-nantly happy, with
+Overfull \hbox (5.26677pt too wide) in paragraph at lines 792--793
+[]\T1/Roboto-LF/bold/n/15.59996 Speech Speed: \T1/Roboto-LF/light/n/15.59996 Mod-er-ately slow pace (0.416344), which helps
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:863: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:837: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.863     \textbf{Analysis:}
-                             High confidence with relatively high hesitation...
+l.837 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:863: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:837: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.863     \textbf{Analysis:}
-                             High confidence with relatively high hesitation...
+l.837 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2603,26 +2576,80 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 22 undefined on input line 863.
+LaTeX Warning: Reference `LastPage' on page 21 undefined on input line 837.
+
+[21]
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:870: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.870 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:870: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.870 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 22 undefined on input line 870.
 
 [22]
+Overfull \hbox (17.27869pt too wide) in paragraph at lines 876--877
+[]\T1/Roboto-LF/bold/n/15.59996 Enthusiasm Score: \T1/Roboto-LF/light/n/15.59996 High-est among the group (0.516685), show-
+ []
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:896: Undefined control sequence.
+
+Overfull \hbox (3.5663pt too wide) in paragraph at lines 877--878
+[]\T1/Roboto-LF/bold/n/15.59996 Confidence Score: \T1/Roboto-LF/light/n/15.59996 3rd high-est (0.684879), in-di-cat-ing a strong
+ []
+
+
+Overfull \hbox (3.5507pt too wide) in paragraph at lines 881--882
+[]\T1/Roboto-LF/bold/n/15.59996 Speech Speed: \T1/Roboto-LF/light/n/15.59996 Fastest among all stu-dents (0.869530), which
+ []
+
+
+Overfull \hbox (1.99336pt too wide) in paragraph at lines 890--891
+\T1/Roboto-LF/bold/n/15.59996 Analysis: \T1/Roboto-LF/light/n/15.59996 The stu-dent's emo-tional state is pre-dom-i-nantly happy, with
+ []
+
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:904: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.896     \end{itemize}
-                       
+l.904     \textbf{Analysis:}
+                             Balanced sentiment with moderate positive and n...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:896: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:904: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.896     \end{itemize}
-                       
+l.904     \textbf{Analysis:}
+                             Balanced sentiment with moderate positive and n...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2637,26 +2664,26 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 896.
+LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 904.
 
 [23]
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:933: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:938: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.933     \textbf{Analysis:}
-                             Moderate confidence with high hesitation, showi...
+l.938     \textbf{Analysis:}
+                             Predominantly neutral with fear as a secondary ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:933: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:938: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.933     \textbf{Analysis:}
-                             Moderate confidence with high hesitation, showi...
+l.938     \textbf{Analysis:}
+                             Predominantly neutral with fear as a secondary ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2671,26 +2698,26 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 24 undefined on input line 933.
+LaTeX Warning: Reference `LastPage' on page 24 undefined on input line 938.
 
 [24]
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:969: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:974: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.969         \item \textbf
-                           {Enthusiasm Score:} 9th lowest, suggesting lower ...
+l.974     \textbf{Analysis:}
+                             The sentiment is slightly positive with a well-...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:969: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:974: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.969         \item \textbf
-                           {Enthusiasm Score:} 9th lowest, suggesting lower ...
+l.974     \textbf{Analysis:}
+                             The sentiment is slightly positive with a well-...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2705,41 +2732,109 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 25 undefined on input line 969.
+LaTeX Warning: Reference `LastPage' on page 25 undefined on input line 974.
 
 [25]
-Overfull \hbox (7.96555pt too wide) in paragraph at lines 969--970
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1008: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.1008     \textbf{Analysis:}
+                              Predominantly neutral with a secondary emotion...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1008: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.1008     \textbf{Analysis:}
+                              Predominantly neutral with a secondary emotion...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 26 undefined on input line 1008.
+
+[26]
+Overfull \hbox (7.96555pt too wide) in paragraph at lines 1019--1020
 []\T1/Roboto-LF/bold/n/15.59996 Enthusiasm Score: \T1/Roboto-LF/light/n/15.59996 9th low-est, sug-gest-ing lower en-gage-ment. 
  []
 
 
-Overfull \hbox (15.12843pt too wide) in paragraph at lines 997--998
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1047: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.1047     \textbf{Analysis:}
+                              The sentiment shows a positive outlook with a ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1047: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.1047     \textbf{Analysis:}
+                              The sentiment shows a positive outlook with a ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 27 undefined on input line 1047.
+
+[27]
+Overfull \hbox (15.12843pt too wide) in paragraph at lines 1047--1048
 \T1/Roboto-LF/light/n/15.59996 neg-a-tive and neu-tral stance, in-di-cat-ing a gen-er-ally op-ti-mistic but some-
  []
 
 
-Overfull \hbox (2.77347pt too wide) in paragraph at lines 1006--1007
+Overfull \hbox (2.77347pt too wide) in paragraph at lines 1056--1057
 []\T1/Roboto-LF/bold/n/15.59996 Analysis: \T1/Roboto-LF/light/n/15.59996 Mod-er-ate con-fi-dence with high hes-i-ta-tion, re-flect-ing a solid
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1013: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1081: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.1013 \end{tcolorbox}
-                      
+l.1081     \textbf{Analysis:}
+                              Predominantly neutral with no strong secondary...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1013: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1081: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.1013 \end{tcolorbox}
-                      
+l.1081     \textbf{Analysis:}
+                              Predominantly neutral with no strong secondary...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2754,31 +2849,31 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 26 undefined on input line 1013.
+LaTeX Warning: Reference `LastPage' on page 28 undefined on input line 1081.
 
-[26]
-Overfull \hbox (9.58795pt too wide) in paragraph at lines 1043--1044
+[28]
+Overfull \hbox (9.58795pt too wide) in paragraph at lines 1093--1094
 []\T1/Roboto-LF/bold/n/15.59996 Speech Speed: \T1/Roboto-LF/light/n/15.59996 8th slow-est, sug-gest-ing a slower de-liv-ery pace. 
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1048: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1118: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.1048         \item \textbf
-                            {Sentiment:} Positive outlook with balanced emot...
+l.1118     \textbf{Analysis:}
+                              Strongly positive sentiment with low negative ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1048: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1118: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.1048         \item \textbf
-                            {Sentiment:} Positive outlook with balanced emot...
+l.1118     \textbf{Analysis:}
+                              Strongly positive sentiment with low negative ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2793,31 +2888,31 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 27 undefined on input line 1048.
+LaTeX Warning: Reference `LastPage' on page 29 undefined on input line 1118.
 
-[27]
-Overfull \hbox (0.55827pt too wide) in paragraph at lines 1077--1078
+[29]
+Overfull \hbox (0.55827pt too wide) in paragraph at lines 1127--1128
 []\T1/Roboto-LF/bold/n/15.59996 Analysis: \T1/Roboto-LF/light/n/15.59996 High con-fi-dence with mod-er-ate hes-i-ta-tion, show-ing strong
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1092: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1152: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.1092 \end{tcolorbox}
-                      
+l.1152     \textbf{Analysis:}
+                              Predominantly neutral with a consistent emotio...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1092: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1152: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.1092 \end{tcolorbox}
-                      
+l.1152     \textbf{Analysis:}
+                              Predominantly neutral with a consistent emotio...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2832,26 +2927,26 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 28 undefined on input line 1092.
+LaTeX Warning: Reference `LastPage' on page 30 undefined on input line 1152.
 
-[28]
+[30]
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1138: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1190: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.1138 \end{tcolorbox}
-                      
+l.1190 
+       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1138: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1190: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.1138 \end{tcolorbox}
-                      
+l.1190 
+       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2866,31 +2961,31 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 29 undefined on input line 1138.
+LaTeX Warning: Reference `LastPage' on page 31 undefined on input line 1190.
 
-[29]
-Overfull \hbox (3.81868pt too wide) in paragraph at lines 1148--1149
+[31]
+Overfull \hbox (3.81868pt too wide) in paragraph at lines 1198--1199
 []\T1/Roboto-LF/bold/n/15.59996 Analysis: \T1/Roboto-LF/light/n/15.59996 High con-fi-dence with lower hes-i-ta-tion, show-ing strong self-
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1174: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1232: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.1174 \end{tcolorbox}
-                      
+l.1232         \item \textbf
+                            {Confidence:} 2nd highest, reflecting strong sel...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1174: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1232: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.1174 \end{tcolorbox}
-                      
+l.1232         \item \textbf
+                            {Confidence:} 2nd highest, reflecting strong sel...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2905,104 +3000,104 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 30 undefined on input line 1174.
-
-[30]
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1212: Undefined control sequence.
-\f@nch@olh ...olor {primaryColor}\assignmentClass 
-                                                  \ifdef {\assignmentClassIn...
-l.1212     \textbf{Analysis:}
-                              Balanced sentiment with a positive outlook and...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1212: Undefined control sequence.
-\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
-                                                  \strut 
-l.1212     \textbf{Analysis:}
-                              Balanced sentiment with a positive outlook and...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 25.56444pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.56444pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
-
-
-LaTeX Warning: Reference `LastPage' on page 31 undefined on input line 1212.
-
-[31]
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1246: Undefined control sequence.
-\f@nch@olh ...olor {primaryColor}\assignmentClass 
-                                                  \ifdef {\assignmentClassIn...
-l.1246     \textbf{Analysis:}
-                              Predominantly neutral with some fear, reflecti...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1246: Undefined control sequence.
-\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
-                                                  \strut 
-l.1246     \textbf{Analysis:}
-                              Predominantly neutral with some fear, reflecti...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 25.56444pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.56444pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
-
-
-LaTeX Warning: Reference `LastPage' on page 32 undefined on input line 1246.
+LaTeX Warning: Reference `LastPage' on page 32 undefined on input line 1232.
 
 [32]
-Overfull \hbox (47.60498pt too wide) in paragraph at lines 1257--1258
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1271: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.1271     \textbf{Analysis:}
+                              Moderate confidence with lower hesitation, sho...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1271: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.1271     \textbf{Analysis:}
+                              Moderate confidence with lower hesitation, sho...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 33 undefined on input line 1271.
+
+[33]
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1307: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.1307         \item \textbf
+                            {Confidence Score:} 8th lowest, suggesting moder...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1307: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.1307         \item \textbf
+                            {Confidence Score:} 8th lowest, suggesting moder...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 34 undefined on input line 1307.
+
+[34]
+Overfull \hbox (47.60498pt too wide) in paragraph at lines 1307--1308
 []\T1/Roboto-LF/bold/n/15.59996 Confidence Score: \T1/Roboto-LF/light/n/15.59996 8th low-est, sug-gest-ing mod-er-ate self-assurance. 
  []
 
 
-Overfull \hbox (0.4932pt too wide) in paragraph at lines 1259--1260
+Overfull \hbox (0.4932pt too wide) in paragraph at lines 1309--1310
 []\T1/Roboto-LF/bold/n/15.59996 Speech Speed: \T1/Roboto-LF/light/n/15.59996 6th slow-est, in-di-cat-ing a slower de-liv-ery pace. 
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1283: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1349: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.1283 
-       
+l.1349     \textbf{Analysis:}
+                              The student shows moderate enthusiasm, reflect...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1283: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1349: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.1283 
-       
+l.1349     \textbf{Analysis:}
+                              The student shows moderate enthusiasm, reflect...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3017,36 +3112,36 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 33 undefined on input line 1283.
+LaTeX Warning: Reference `LastPage' on page 35 undefined on input line 1349.
 
-[33]
-Overfull \hbox (2.97621pt too wide) in paragraph at lines 1299--1300
+[35]
+Overfull \hbox (2.97621pt too wide) in paragraph at lines 1349--1350
 []\T1/Roboto-LF/bold/n/15.59996 Analysis: \T1/Roboto-LF/light/n/15.59996 The stu-dent shows mod-er-ate en-thu-si-asm, re-flect-ing a pos-
  []
 
 
-Overfull \hbox (0.40225pt too wide) in paragraph at lines 1307--1308
+Overfull \hbox (0.40225pt too wide) in paragraph at lines 1357--1358
 []\T1/Roboto-LF/bold/n/15.59996 Analysis: \T1/Roboto-LF/light/n/15.59996 The stu-dent's speech speed is the fastest among all, which
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1317: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1384: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.1317 
-       
+l.1384     \end{itemize}
+                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1317: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1384: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.1317 
-       
+l.1384     \end{itemize}
+                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3061,13 +3156,13 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 34 undefined on input line 1317.
+LaTeX Warning: Reference `LastPage' on page 36 undefined on input line 1384.
 
-[34]
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1349: Extra }, or forgotten \endgroup.
+[36]
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1399: Extra }, or forgotten \endgroup.
 \endtcb@savebox ...efalse \color@endgroup \egroup 
                                                   \expandafter \@iiiparbox \...
-l.1349     \end{tcolorbox}
+l.1399     \end{tcolorbox}
                           
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3076,22 +3171,22 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1349: LaTeX Error: \begin{tcb@savebox} on input line 1344 ended by \end{tcolorbox}.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1399: LaTeX Error: \begin{tcb@savebox} on input line 1394 ended by \end{tcolorbox}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1349     \end{tcolorbox}
+l.1399     \end{tcolorbox}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1349: Missing } inserted.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1399: Missing } inserted.
 <inserted text> 
                 }
-l.1349     \end{tcolorbox}
+l.1399     \end{tcolorbox}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3100,13 +3195,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1350: LaTeX Error: \begin{tcolorbox} on input line 1344 ended by \end{enumerate}.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1400: LaTeX Error: \begin{tcolorbox} on input line 1394 ended by \end{enumerate}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1350     \end{enumerate}
+l.1400     \end{enumerate}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3114,10 +3209,10 @@ or  <return>  to continue without it.
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1366: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1433: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.1366 \end{tcolorbox}
+l.1433 \end{tcolorbox}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3125,10 +3220,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1366: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1433: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.1366 \end{tcolorbox}
+l.1433 \end{tcolorbox}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3144,192 +3239,36 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 35 undefined on input line 1366.
+LaTeX Warning: Reference `LastPage' on page 37 undefined on input line 1433.
 
-[35]
-Overfull \hbox (25.0991pt too wide) in paragraph at lines 1391--1392
+[37]
+Overfull \hbox (25.0991pt too wide) in paragraph at lines 1441--1442
 []\T1/Roboto-LF/bold/n/15.59996 Confidence Score: \T1/Roboto-LF/light/n/15.59996 4th high-est, in-di-cat-ing strong self-assurance. 
  []
 
 
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1398: Undefined control sequence.
-\f@nch@olh ...olor {primaryColor}\assignmentClass 
-                                                  \ifdef {\assignmentClassIn...
-l.1398     \end{itemize}
-                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1398: Undefined control sequence.
-\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
-                                                  \strut 
-l.1398     \end{itemize}
-                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 25.56444pt, for example:
-(fancyhdr)                \setlength{\headheight}{25.56444pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
-
-
-LaTeX Warning: Reference `LastPage' on page 36 undefined on input line 1398.
-
-[36]
-Overfull \hbox (7.40567pt too wide) in paragraph at lines 1402--1403
+Overfull \hbox (7.40567pt too wide) in paragraph at lines 1452--1453
 []\T1/Roboto-LF/bold/n/15.59996 Speed Man-age-ment: \T1/Roboto-LF/light/n/15.59996 Ef-fec-tive pac-ing needed to im-prove clar-
  []
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1423: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1423 ...\item [\textcolor{accentColor1}{��}]
-                                                   Strong correlation betwee...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1423: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1423 ...\item [\textcolor{accentColor1}{��}]
-                                                   Strong correlation betwee...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1424: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1424 ...\item [\textcolor{accentColor2}{��}]
-                                                   Statistically significant...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1424: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1424 ...\item [\textcolor{accentColor2}{��}]
-                                                   Statistically significant...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1425: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1425 ...em [\textcolor{accentColor3}{��️}]
-                                                   No significant relationsh...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1425: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1425 ...em [\textcolor{accentColor3}{��️}]
-                                                   No significant relationsh...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1425: LaTeX Error: Unicode character ️ (U+FE0F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1425 ...em [\textcolor{accentColor3}{��️}]
-                                                   No significant relationsh...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-Overfull \hbox (6.94437pt too wide) in paragraph at lines 1425--1426
-[]\T1/Roboto-LF/light/n/15.59996 No sig-nif-i-cant re-la-tion-ship be-tween pos-i-tive emo-tions and speech
- []
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1426: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1426 ...\item [\textcolor{primaryColor}{��}]
-                                                   Hesitance and enthusiasm ...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1426: LaTeX Error: Unicode character � (U+FFFD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1426 ...\item [\textcolor{primaryColor}{��}]
-                                                   Hesitance and enthusiasm ...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1435: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1466: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.1435 ...\item [\textcolor{accentColor1}{��}]
-                                                   Conduct longitudinal stud...
+l.1466 \section{Feature Importance}
+                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1435: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1466: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.1435 ...\item [\textcolor{accentColor1}{��}]
-                                                   Conduct longitudinal stud...
+l.1466 \section{Feature Importance}
+                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3344,129 +3283,285 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 37 undefined on input line 1435.
+LaTeX Warning: Reference `LastPage' on page 38 undefined on input line 1466.
 
-[37]
+[38]
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1435: LaTeX Error: Unicode character � (U+FFFD)
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1473: LaTeX Error: Unicode character � (U+FFFD)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1435 ...\item [\textcolor{accentColor1}{��}]
+l.1473 ...\item [\textcolor{accentColor1}{��}]
+                                                   Strong correlation betwee...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1473: LaTeX Error: Unicode character � (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1473 ...\item [\textcolor{accentColor1}{��}]
+                                                   Strong correlation betwee...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1474: LaTeX Error: Unicode character � (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1474 ...\item [\textcolor{accentColor2}{��}]
+                                                   Statistically significant...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1474: LaTeX Error: Unicode character � (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1474 ...\item [\textcolor{accentColor2}{��}]
+                                                   Statistically significant...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1475: LaTeX Error: Unicode character � (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1475 ...em [\textcolor{accentColor3}{��️}]
+                                                   No significant relationsh...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1475: LaTeX Error: Unicode character � (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1475 ...em [\textcolor{accentColor3}{��️}]
+                                                   No significant relationsh...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1475: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1475 ...em [\textcolor{accentColor3}{��️}]
+                                                   No significant relationsh...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Overfull \hbox (6.94437pt too wide) in paragraph at lines 1475--1476
+[]\T1/Roboto-LF/light/n/15.59996 No sig-nif-i-cant re-la-tion-ship be-tween pos-i-tive emo-tions and speech
+ []
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1476: LaTeX Error: Unicode character � (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1476 ...\item [\textcolor{primaryColor}{��}]
+                                                   Hesitance and enthusiasm ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1476: LaTeX Error: Unicode character � (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1476 ...\item [\textcolor{primaryColor}{��}]
+                                                   Hesitance and enthusiasm ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1485: LaTeX Error: Unicode character � (U+FFFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1485 ...\item [\textcolor{accentColor1}{��}]
                                                    Conduct longitudinal stud...
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1435: LaTeX Error: Unicode character � (U+FFFD)
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1485: LaTeX Error: Unicode character � (U+FFFD)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1435 ...\item [\textcolor{accentColor1}{��}]
+l.1485 ...\item [\textcolor{accentColor1}{��}]
                                                    Conduct longitudinal stud...
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1436: LaTeX Error: Unicode character � (U+FFFD)
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1486: LaTeX Error: Unicode character � (U+FFFD)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1436 ...\item [\textcolor{accentColor2}{��}]
+l.1486 ...\item [\textcolor{accentColor2}{��}]
                                                    Develop machine learning ...
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1436: LaTeX Error: Unicode character � (U+FFFD)
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1486: LaTeX Error: Unicode character � (U+FFFD)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1436 ...\item [\textcolor{accentColor2}{��}]
+l.1486 ...\item [\textcolor{accentColor2}{��}]
                                                    Develop machine learning ...
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-Overfull \hbox (6.14882pt too wide) in paragraph at lines 1436--1437
+Overfull \hbox (6.14882pt too wide) in paragraph at lines 1486--1487
 []\T1/Roboto-LF/light/n/15.59996 Develop ma-chine learn-ing mod-els to pre-dict stu-dent per-for-mance
  []
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1437: LaTeX Error: Unicode character � (U+FFFD)
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1487: LaTeX Error: Unicode character � (U+FFFD)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1437 ...\item [\textcolor{accentColor3}{��}]
+l.1487 ...\item [\textcolor{accentColor3}{��}]
                                                    Investigate the impact of...
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1437: LaTeX Error: Unicode character � (U+FFFD)
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1487: LaTeX Error: Unicode character � (U+FFFD)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1437 ...\item [\textcolor{accentColor3}{��}]
+l.1487 ...\item [\textcolor{accentColor3}{��}]
                                                    Investigate the impact of...
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1438: LaTeX Error: Unicode character � (U+FFFD)
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1488: LaTeX Error: Unicode character � (U+FFFD)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1438 ...\item [\textcolor{primaryColor}{��}]
+l.1488 ...\item [\textcolor{primaryColor}{��}]
                                                    Expand the dataset to inc...
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1438: LaTeX Error: Unicode character � (U+FFFD)
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1488: LaTeX Error: Unicode character � (U+FFFD)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1438 ...\item [\textcolor{primaryColor}{��}]
+l.1488 ...\item [\textcolor{primaryColor}{��}]
                                                    Expand the dataset to inc...
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-Overfull \hbox (1.80617pt too wide) in paragraph at lines 1441--1442
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1489: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.1489 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1489: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.1489 \end{enumerate}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 39 undefined on input line 1489.
+
+[39]
+Overfull \hbox (1.80617pt too wide) in paragraph at lines 1491--1492
 []\T1/Roboto-LF/light/n/15.59996 By pur-su-ing these av-enues, re-searchers and ed-u-ca-tors can gain even
  []
 
 
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1443: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1493: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.1443 \end{document}
+l.1493 \end{document}
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3474,10 +3569,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1443: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/check/latex/main.tex:1493: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.1443 \end{document}
+l.1493 \end{document}
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3493,9 +3588,9 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 38 undefined on input line 1443.
+LaTeX Warning: Reference `LastPage' on page 40 undefined on input line 1493.
 
-[38] 
+[40] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -3523,24 +3618,24 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A91A492D27104D67C23E52D0B4F756D7;3734.
+(rerunfilecheck)             After:  0D55425291E06EE5CC7C7B0C542C084D;3734.
 
-Package lastpage Warning: Rerun to get the references right on input line 1443.
+Package lastpage Warning: Rerun to get the references right on input line 1493.
 
  ) 
 Here is how much of TeX's memory you used:
- 40793 strings out of 473579
- 939256 string characters out of 5732263
- 1558463 words of memory out of 5000000
- 62845 multiletter control sequences out of 15000+600000
+ 40802 strings out of 473579
+ 939528 string characters out of 5732263
+ 1559463 words of memory out of 5000000
+ 62852 multiletter control sequences out of 15000+600000
  657491 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,107p,761b,1354s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb><c:/texlive/2024/texmf-dist/fonts/type1/google/roboto/Roboto-Light.pfb><c:/texlive/2024/texmf-dist/fonts/type1/google/roboto/Roboto-LightItalic.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (38 pages, 827139 bytes).
+Output written on main.pdf (40 pages, 854798 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 333 compressed objects within 4 object streams
- 171 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 428 PDF objects out of 1000 (max. 8388607)
+ 339 compressed objects within 4 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

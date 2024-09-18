@@ -1,0 +1,27 @@
+i have gaze_df of 10 students 
+in each csv of student there are 
+	movie_id	image_seq	gaze	blink	eye_offset
+0	93663f94-bf0a-4ce8-a29a-a5236cc7fe6a	1	1	0	6.2253
+1	93663f94-bf0a-4ce8-a29a-a5236cc7fe6a	2	1	0	22.7274
+2	93663f94-bf0a-4ce8-a29a-a5236cc7fe6a	3	1	0	2.5704
+3	93663f94-bf0a-4ce8-a29a-a5236cc7fe6a	4	1	0	21.1097
+4	93663f94-bf0a-4ce8-a29a-a5236cc7fe6a	5	1	0	1.8453
+5	93663f94-bf0a-4ce8-a29a-a5236cc7fe6a	6	0	0	26.8643
+data like this
+now i want to make merged_gaze_df of all 10 students how can i do this?
+
+
+what is eye-offset can u explain??-The "eye-offset" could represent the deviation of the user's actual gaze point from the intended or target point (e.g., where they are supposed to be looking on a screen).
+For example, in an experiment, if the user is supposed to look at the center of a screen but looks slightly to the left, the eye-offset would be a measurement of that deviation.
+
+okk so in the data we have eye_offset for each frame how can we calculate eye_offset for whole video
+
+To calculate the eye_offset for the entire video from the frame-wise data, you need to aggregate the eye_offset values across all frames for each video. Since eye_offset represents a numerical value in each frame, there are different ways to aggregate it depending on what you want to measure:
+
+Mean eye_offset: This gives the average offset across all frames of the video.
+Maximum eye_offset: This captures the maximum offset observed during the video.
+Minimum eye_offset: This gives the smallest deviation during the video.
+Standard deviation: This shows how much variation or dispersion there is in the eye_offset values during the video.
+Approach:
+Typically, the mean eye_offset is used to give an overall idea of how much the gaze deviated on average throughout the video.
+

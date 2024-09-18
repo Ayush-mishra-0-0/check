@@ -1,0 +1,8 @@
+id   "neutral  confident  hesitant   concise  enthusiastic  speech_speed  
+0    0.267454   0.846701  0.845698  0.635805      0.647783      2.517986  
+1    0.260410   0.679283  0.733701  0.544145      0.417390      3.217822  
+
+this is data of csv file of every transcript data and this is student 1.. there are 10 
+such students, so 10 such df_transcript , so i want to make
+combined df where two most frequent text data throughtout 
+the video of the student reflects  All df_transcript files are transcript_data folder.

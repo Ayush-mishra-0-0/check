@@ -1,0 +1,8 @@
+movie_id	image_seq	angry	disgust	fear	happy	sad	surprise	neutral	dominant_emotion
+0	93663f94-bf0a-4ce8-a29a-a5236cc7fe6a	0	4.31735	0.000594	2.879790	1.65035	2.779980	0.600814	87.77110	neutral
+1	93663f94-bf0a-4ce8-a29a-a5236cc7fe6a	1	53.22530	2.981640	12.736800	1.52347	1.051320	27.216800	1.26462	angry
+
+this is data of csv file of every emotion data and this is student 1.. there are 10 
+such students, so 10 such df_emotion, so i want to make
+combined df where two most frequent emotion data throughtout 
+the video of the student reflects  All df_emotion csv files are emotion_data folder.
