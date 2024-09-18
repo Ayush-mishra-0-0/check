@@ -345,6 +345,73 @@ First off, I’m going to take the \highlight{dominant emotions} for each studen
 \newpage
 
 So this is my new DATAFRAME , Let's call it \textsc{final\_df}
+
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=green!70!black, title=Final Dataframe, fonttitle=\bfseries\Large]
+    \begin{tblr}{
+        colspec = {lccccccccccc},
+        row{1} = {font=\bfseries\color{red}},
+        hlines,
+        vlines,
+        stretch = 0.1
+    }
+    \textbf{id} & \textbf{avg\_positive} & \textbf{avg\_negative} & \textbf{avg\_neutral} & \textbf{avg\_confident}  \\
+    1 & \textcolor{blue}{0.709199} & \textcolor{blue}{0.141214} & \textcolor{blue}{0.149586} & 0.733828 \\
+    2 & \textcolor{blue}{0.722006} & \textcolor{blue}{0.107541} & \textcolor{blue}{0.170453} & 0.684879 \\
+    \end{tblr}
+    
+    \begin{tblr}{ colspec = {lccccccccccc},
+        row{1} = {font=\bfseries\color{red}},
+        hlines,
+        vlines,
+        stretch = 1}
+    \textbf{avg\_hesitant} & \textbf{avg\_concise} & \textbf{avg\_enthusiastic} & \textbf{avg\_speech\_speed} \\
+    0.485172 & 0.429418 & 0.466497 & 3.113771  \\
+     0.436158 & 0.484221 & 0.516685 & 3.269092 \\
+    \end{tblr}
+    \begin{tblr}{ colspec = {lccccccccccc},
+        row{1} = {font=\bfseries\color{red}},
+        hlines,
+        vlines,
+        stretch = 1}
+    
+    \textbf{dominant\_emotion\_top1} & \textbf{dominant\_emotion\_top2} & \textbf{gaze\_score} \\
+    neutral & fear & 0.625000  \\
+    happy & neutral & 0.609195\\
+    \end{tblr}
+
+    \begin{tblr}{ colspec = {lccccccccccc},
+        row{1} = {font=\bfseries\color{red}},
+        hlines,
+        vlines,
+        stretch = 1}
+    
+    \textbf{blink\_sum} & \textbf{eye\_offset\_mean} & \textbf{eye\_offset\_max} & \textbf{eye\_offset\_min}  \\
+    0.000000	& 15.801362	& 65.0276	& -33.4655	\\
+   4.597701	& 21.768546 &	67.6710	& -15.2405  \\
+        
+    \end{tblr}
+
+
+    \begin{tblr}{ colspec = {lccccccccccc},
+        row{1} = {font=\bfseries\color{red}},
+        hlines,
+        vlines,
+        stretch = 1}
+
+    \textbf{eye\_offset\_std} & \textbf{image\_seq\_count}\\
+     17.858517 &	88\\
+    15.619435 &	87 \\
+    \end{tblr}
+    \end{tcolorbox}
+
+    % gaze_score	blink_sum	eye_offset_mean	eye_offset_max	eye_offset_min	eye_offset_std	image_seq_count
+    % 0.625000	0.000000	15.801362	65.0276	-33.4655	17.858517	88
+    % 0.609195	4.597701	21.768546	67.6710	-15.2405	15.619435	87
+   
+
+
+
 \begin{center}
     
 \includegraphics[width=1/columnwidth]{}

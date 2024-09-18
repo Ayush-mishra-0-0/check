@@ -7,20 +7,20 @@
 \contentsline {section}{\numberline {3}3. Data Preparation and Integration}{5}{section.3}%
 \contentsline {section}{\numberline {4}4. Data Preprocessing}{7}{section.4}%
 \contentsline {section}{\numberline {5}5. Advanced Analysis}{8}{section.5}%
-\contentsline {subsection}{\numberline {(a)}A.) Communication Skills Analysis}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {(b)}B.) Emotional State and Body Language Analysis}{14}{subsection.5.2}%
-\contentsline {section}{\numberline {6}6. Individual Student Analysis}{19}{section.6}%
-\contentsline {subsection}{\numberline {(a)}Student 1}{19}{subsection.6.1}%
-\contentsline {subsection}{\numberline {(b)}Student 2}{22}{subsection.6.2}%
-\contentsline {subsection}{\numberline {(c)}Student 3}{23}{subsection.6.3}%
-\contentsline {subsection}{\numberline {(d)}Student 4}{25}{subsection.6.4}%
-\contentsline {subsection}{\numberline {(e)}Student 5}{27}{subsection.6.5}%
-\contentsline {subsection}{\numberline {(f)}Student 6}{29}{subsection.6.6}%
-\contentsline {subsection}{\numberline {(g)}Student 7}{31}{subsection.6.7}%
-\contentsline {subsection}{\numberline {(h)}Student 8}{33}{subsection.6.8}%
-\contentsline {subsection}{\numberline {(i)}Student 9}{35}{subsection.6.9}%
-\contentsline {subsection}{\numberline {(j)}Student 10}{37}{subsection.6.10}%
-\contentsline {section}{\numberline {7}Statistical Analysis}{39}{section.7}%
-\contentsline {section}{\numberline {8}Feature Importance}{39}{section.8}%
-\contentsline {section}{\numberline {9}Conclusion}{39}{section.9}%
-\contentsline {section}{\numberline {10}Future Work}{39}{section.10}%
+\contentsline {subsection}{\numberline {(a)}A.) Communication Skills Analysis}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {(b)}B.) Emotional State and Body Language Analysis}{15}{subsection.5.2}%
+\contentsline {section}{\numberline {6}6. Individual Student Analysis}{20}{section.6}%
+\contentsline {subsection}{\numberline {(a)}Student 1}{20}{subsection.6.1}%
+\contentsline {subsection}{\numberline {(b)}Student 2}{23}{subsection.6.2}%
+\contentsline {subsection}{\numberline {(c)}Student 3}{24}{subsection.6.3}%
+\contentsline {subsection}{\numberline {(d)}Student 4}{26}{subsection.6.4}%
+\contentsline {subsection}{\numberline {(e)}Student 5}{28}{subsection.6.5}%
+\contentsline {subsection}{\numberline {(f)}Student 6}{30}{subsection.6.6}%
+\contentsline {subsection}{\numberline {(g)}Student 7}{32}{subsection.6.7}%
+\contentsline {subsection}{\numberline {(h)}Student 8}{34}{subsection.6.8}%
+\contentsline {subsection}{\numberline {(i)}Student 9}{36}{subsection.6.9}%
+\contentsline {subsection}{\numberline {(j)}Student 10}{38}{subsection.6.10}%
+\contentsline {section}{\numberline {7}Statistical Analysis}{40}{section.7}%
+\contentsline {section}{\numberline {8}Feature Importance}{40}{section.8}%
+\contentsline {section}{\numberline {9}Conclusion}{40}{section.9}%
+\contentsline {section}{\numberline {10}Future Work}{40}{section.10}%

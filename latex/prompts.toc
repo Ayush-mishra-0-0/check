@@ -1,5 +1,4 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Outline of the Document}{3}{subsection.1.1}%
 \contentsline {section}{\numberline {2}Data Preparation and Integration}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Extracting Key Features from Emotion Data from each CSV file and making single DATAFRAME}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Integrating transcript data with emotion data}{6}{subsection.2.2}%
@@ -11,3 +10,4 @@
 \contentsline {subsection}{\numberline {4.3}Based on the final\_df, I asked for analysis on the data.}{12}{subsection.4.3}%
 \contentsline {section}{\numberline {5}Scoring of the Students based on the data.}{16}{section.5}%
 \contentsline {section}{\numberline {6}Conclusion}{18}{section.6}%
+\contentsline {section}{\numberline {7}All the chatgpt links for the responses}{19}{section.7}%
