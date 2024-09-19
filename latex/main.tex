@@ -19,16 +19,27 @@
   bottom=25mm,
   heightrounded,
 }
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage{tabularx}
-\usepackage{lastpage}
+\usepackage{lmodern}
+\usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{tabularx}
+
+
+
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{booktabs}
@@ -60,6 +71,10 @@
 \definecolor{primaryColor}{RGB}{34, 45, 101}
 \definecolor{accentColor2}{RGB}{46, 117, 182}
 \definecolor{backgroundColor}{RGB}{245, 245, 245}
+\definecolor{fitcolor}{RGB}{0,128,0}
+\definecolor{okaycolor}{RGB}{255,165,0}
+\definecolor{notfitcolor}{RGB}{255,0,0}
+
 
 
 \definecolor{sectioncolor}{RGB}{0,0,100}  % Deep blue for main headings
@@ -789,8 +804,46 @@ The standard deviation indicates how much the student's eyes typically deviated 
     \end{center}
 % Repeat this section for each student, similar to the original document
 
-On the basis of above analysis, I have created a detailed analysis for each student.\\
-His expertise, communication skills, emotional intelligence, and body language are analyzed in detail.\\
+On the analysis i did in section advanced analysis, I did seperate analysis for each student.\\
+on his expertise, communication skills, emotional intelligence, and body language are analyzed in detail.\\
+
+\large
+
+\textbf{Transcript Data (Positive, Negative, Neutral)}:
+
+Higher positive score indicates better ability to maintain a positive tone, which is critical for many roles.
+Higher negative score may indicate a candidate who tends to express negative emotions or perspectives, which may reduce their fit.
+A balance of neutral responses is normal, but too much neutrality may indicate a lack of enthusiasm or engagement.
+
+\textbf{Confidence}:
+
+Higher confidence indicates a candidate who is more assured in their communication, a key factor in leadership or client-facing roles.
+
+\textbf{Hesitance}:
+
+
+Higher hesitance suggests uncertainty, which may negatively impact the fit for leadership or critical decision-making roles. However, it can be okay for technical or supporting roles.
+
+\textbf{Speech Speed}:
+
+Optimal speech speed (not too fast or too slow) shows clarity in communication. Extremes in either direction can indicate nervousness or a lack of engagement.
+
+\textbf{Enthusiasm}:
+
+Candidates who show higher enthusiasm are more likely to be motivated and engaging, which is important in most roles.
+
+\textbf{Body Language (Blink Sum, Gaze Score, Eye Offset)}:
+
+\begin{itemize}
+    \item Blink Sum: Too many blinks may indicate stress or nervousness.
+    \item Gaze Score: Higher gaze scores show good eye contact, which is important for building rapport.
+    \item Eye Offset: Large deviations might indicate discomfort or lack of focus.
+\end{itemize}
+
+
+
+\normalsize
+
 \subsection{Student 1}
 \begin{center}
     \color{green}\rule{1\linewidth}{0.7mm}
@@ -1528,11 +1581,186 @@ His expertise, communication skills, emotional intelligence, and body language a
 
 % ... Continue for all students
 
-\section{Statistical Analysis}
-% Include t-tests, ANOVA, and other statistical analyses from the original document
+% \section{Statistical Analysis}
+% % Include t-tests, ANOVA, and other statistical analyses from the original document
 
-\section{Feature Importance}
-% Include feature importance analysis from the original document
+\section{7. Candidate Evaluation Framework Explanation}
+
+This section provides a detailed explanation of the Python code used for evaluating candidates based on various metrics derived from their interview performance.
+
+\subsection{Overview}
+
+The framework consists of several key components:
+
+\begin{itemize}
+    \item Score calculation functions for different aspects of the candidate's performance
+    \item A function to categorize candidates based on their total score
+    \item A main analysis function that applies the scoring framework to each candidate
+    \item Data processing and result presentation
+\end{itemize}
+
+\subsection{Score Calculation Functions}
+
+\subsubsection{Communication Score}
+% Add color to tcolorbox
+
+\small
+\begin{equation}
+    \begin{aligned}
+        \text{Communication Score} = \min(\text{avg\_positive} \times 10, 10)
+        &+ \min(\text{avg\_neutral} \times 5, 5) \\
+        &+ \max(5 - |3 - \text{avg\_speech\_speed}| \times 2, 0) \\
+        &+ \text{avg\_concise} \times 5
+    \end{aligned}
+\end{equation}
+\normalsize
+
+
+
+
+% \begin{equation}[]
+%     \text{Communication Score} = \min(avg\_positive * 10, 10) + \min(avg\_neutral * 5, 5) + \max(5 - |3 - avg\_speech\_speed| * 2, 0) + avg\_concise * 5
+% \end{equation}
+
+This function evaluates the candidate's communication skills based on:
+\begin{itemize}
+    \item Positive and neutral language use
+    \item Speech speed (with an ideal speed of 3)
+    \item Conciseness
+\end{itemize}
+
+\subsubsection{Body Language Score}
+\begin{equation}
+    \text{Body Language Score} = gaze\_score * 5 + \max(5 - \frac{eye\_offset\_std}{10}, 0) + \max(5 - \frac{blink\_sum}{10}, 0)
+\end{equation}
+
+This function assesses the candidate's body language, considering:
+\begin{itemize}
+    \item Gaze direction
+    \item Eye movement stability
+    \item Blinking frequency
+\end{itemize}
+
+\subsubsection{Confidence and Enthusiasm Score}
+\begin{equation}
+    \text{Confidence \& Enthusiasm Score} = avg\_confident * 10 + avg\_enthusiastic * 10
+\end{equation}
+
+This score is a direct measure of the candidate's perceived confidence and enthusiasm.
+
+\subsubsection{Emotional Intelligence Score}
+\begin{equation}
+    \text{Emotional Intelligence Score} = \begin{cases}
+        5, & \text{if dominant\_emotion\_top1 in \{happy, neutral\}} \\
+        5, & \text{if dominant\_emotion\_top2 in \{happy, neutral\}} \\
+        -5, & \text{if dominant\_emotion\_top1 in \{sad, angry, fear\}} \\
+        -5, & \text{if dominant\_emotion\_top2 in \{sad, angry, fear\}} \\
+        0, & \text{otherwise}
+    \end{cases}
+\end{equation}
+
+This function evaluates the candidate's emotional range and appropriateness, rewarding positive emotions and penalizing negative ones.
+
+\subsubsection{Composure Score}
+\begin{equation}
+    \text{Composure Score} = -(avg\_hesitant * 7) - (avg\_negative * 8)
+\end{equation}
+
+This score reflects the candidate's ability to maintain composure, penalizing hesitancy and negative expressions.
+
+\subsection{Fitness Categorization}
+
+Candidates are categorized based on their total score:
+
+\begin{equation}
+    \text{Fitness Category} = \begin{cases}
+        \text{"Fit for role"}, & \text{if Total Score} \geq 35 \\
+        \text{"Okay Fit for role"}, & \text{if } 30 \leq \text{Total Score} < 35 \\
+        \text{"Not Fit"}, & \text{if Total Score} < 30
+    \end{cases}
+\end{equation}
+
+\subsection{Main Analysis Function}
+
+The \texttt{analyze\_candidate} function applies all scoring functions to a candidate's data and returns a comprehensive evaluation, including:
+
+\begin{itemize}
+    \item Individual scores for each evaluated aspect
+    \item Total score
+    \item Fitness category
+\end{itemize}
+
+\subsection{Data Processing and Result Presentation}
+
+The framework processes the data as follows:
+
+\begin{enumerate}
+    \item Applies the \texttt{analyze\_candidate} function to each row of the input data
+    \item Combines the original data with the calculated results
+    \item Sorts candidates by their total score in descending order
+    \item Displays a summary table with candidate IDs, total scores, and fitness categories
+    \item Provides detailed feedback for each candidate, highlighting strengths and areas for improvement based on their scores in each category
+\end{enumerate}
+
+\subsection{Conclusion}
+
+This framework provides a comprehensive, quantitative approach to candidate evaluation, considering multiple aspects of their interview performance. It allows for objective comparison between candidates and provides actionable feedback for improvement.
+
+
+
+\section{8. Ranking of Students and Fit or Not}
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}
+    \begin{axis}[
+        width=\textwidth,
+        height=0.5\textheight,
+        ybar,
+        enlargelimits=0.15,
+        legend style={at={(0.5,-0.15)}, anchor=north,legend columns=-1},
+        ylabel={Total Score},
+        symbolic x coords={1,2,3,4,5,6,7,8,9,10},
+        xtick=data,
+        nodes near coords,
+        nodes near coords align={vertical},
+        x tick label style={rotate=45,anchor=east},
+    ]
+    \addplot[fill=fitcolor] coordinates {(1,40.90) (2,39.08) (3,37.27) (4,35.79)};
+    \addplot[fill=okaycolor] coordinates {(5,33.58) (6,31.74)};
+    \addplot[fill=notfitcolor] coordinates {(7,29.05) (8,26.25) (9,24.98) (10,22.52)};
+    \legend{Fit for role, Okay Fit for role, Not Fit}
+    \end{axis}
+    \end{tikzpicture}
+    \caption{Candidate Total Scores}
+    \label{fig:candidate-scores}
+    \end{figure}
+    
+\subsection{Candidate Evaluation Summary}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{cccc}
+\toprule
+\textbf{Candidate ID} & \textbf{id} & \textbf{Total Score} & \textbf{Fitness Category} & \textbf{Color Code} \\
+\midrule
+b4b6b5a2-4203-41c2-b703-c424dae1fe2b & 6 & 40.90 & Fit for role & \textcolor{fitcolor}{$\blacksquare$} \\
+3d7cd21a-3170-4352-b499-24ea04eaf48c & 2 & 39.08 & Fit for role & \textcolor{fitcolor}{$\blacksquare$} \\
+deb4a835-b82f-4f3d-b2c4-77c66eca7752 & 9 & 37.27 & Fit for role & \textcolor{fitcolor}{$\blacksquare$} \\
+80985461-c5d6-466f-a30a-4de2784ed0a3 & 5 & 35.79 & Fit for role & \textcolor{fitcolor}{$\blacksquare$} \\
+e2aa9258-47a5-46ab-9c5c-283460f7a807 & 1 & 33.58 & Okay for role & \textcolor{okaycolor}{$\blacksquare$} \\
+1c0c686b-3aae-4ac6-8625-3e86a7a0892f & 8 & 31.74 & Okay for role & \textcolor{okaycolor}{$\blacksquare$} \\
+62ea9b36-7860-4dc9-827c-600604286571 & 4 & 29.05 & Not Fit & \textcolor{notfitcolor}{$\blacksquare$} \\
+f299e1b2-7d92-4420-9c5a-d0d2590abdbe & 3 & 26.25 & Not Fit & \textcolor{notfitcolor}{$\blacksquare$} \\
+d851fe95-3ead-47c1-88aa-d6fc453f7021 & 7 & 24.98 & Not Fit & \textcolor{notfitcolor}{$\blacksquare$} \\
+70a013ed-120a-41fa-bedd-75a5d15afb76 & 10& 22.52 & Not Fit & \textcolor{notfitcolor}{$\blacksquare$} \\
+\bottomrule
+\end{tabular}
+\caption{Candidate Evaluation Overview}
+\label{tab:candidate-overview}
+\end{table}
+
+
+\newpage
 
 \section{Conclusion}
 This comprehensive analysis of the video text dataset has revealed several significant patterns and relationships among emotional and communication attributes of students:

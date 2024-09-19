@@ -1,0 +1,237 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+\definecolor{fitcolor}{RGB}{0,128,0}
+\definecolor{okaycolor}{RGB}{255,165,0}
+\definecolor{notfitcolor}{RGB}{255,0,0}
+
+\geometry{a4paper, margin=2.5cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[L]{\textit{Candidate Evaluation Report}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\textit{Confidential}}
+
+\title{\Huge\bfseries Candidate Evaluation Report}
+\author{\Large HR Department}
+\date{\Large\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+
+\section{Candidate Evaluation Summary}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{cccc}
+\toprule
+\textbf{Candidate ID} & \textbf{Total Score} & \textbf{Fitness Category} & \textbf{Color Code} \\
+\midrule
+92016995-e455-4651-9f6e-fbca0d423f21 & 40.90 & Fit for role & \textcolor{fitcolor}{$\blacksquare$} \\
+baa26895-85b2-465b-a972-649b41d9870e & 39.08 & Fit for role & \textcolor{fitcolor}{$\blacksquare$} \\
+dfb0d746-609f-4dac-8e1d-c0325fb64394 & 37.27 & Fit for role & \textcolor{fitcolor}{$\blacksquare$} \\
+9c350343-e895-49df-af90-d50b91d19d3e & 35.79 & Fit for role & \textcolor{fitcolor}{$\blacksquare$} \\
+93663f94-bf0a-4ce8-a29a-a5236cc7fe6a & 33.58 & Okay Fit for role & \textcolor{okaycolor}{$\blacksquare$} \\
+813af424-a584-4417-b7ee-0d4c705e83c9 & 31.74 & Okay Fit for role & \textcolor{okaycolor}{$\blacksquare$} \\
+6b0386fc-41de-4196-b0d6-3d0b815c2dbc & 29.05 & Not Fit & \textcolor{notfitcolor}{$\blacksquare$} \\
+d0b9170b-98b9-48e1-a1b2-1d661bb0d853 & 26.25 & Not Fit & \textcolor{notfitcolor}{$\blacksquare$} \\
+6539370c-256e-4ed2-9d00-1be1f051163f & 24.98 & Not Fit & \textcolor{notfitcolor}{$\blacksquare$} \\
+83c20b83-7881-499d-a40d-cc06b65869f8 & 22.52 & Not Fit & \textcolor{notfitcolor}{$\blacksquare$} \\
+\bottomrule
+\end{tabular}
+\caption{Candidate Evaluation Overview}
+\label{tab:candidate-overview}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=\textwidth,
+    height=0.5\textheight,
+    ybar,
+    enlargelimits=0.15,
+    legend style={at={(0.5,-0.15)}, anchor=north,legend columns=-1},
+    ylabel={Total Score},
+    symbolic x coords={1,2,3,4,5,6,7,8,9,10},
+    xtick=data,
+    nodes near coords,
+    nodes near coords align={vertical},
+    x tick label style={rotate=45,anchor=east},
+]
+\addplot[fill=fitcolor] coordinates {(1,40.90) (2,39.08) (3,37.27) (4,35.79)};
+\addplot[fill=okaycolor] coordinates {(5,33.58) (6,31.74)};
+\addplot[fill=notfitcolor] coordinates {(7,29.05) (8,26.25) (9,24.98) (10,22.52)};
+\legend{Fit for role, Okay Fit for role, Not Fit}
+\end{axis}
+\end{tikzpicture}
+\caption{Candidate Total Scores}
+\label{fig:candidate-scores}
+\end{figure}
+
+\newpage
+
+\section{Detailed Candidate Evaluations}
+
+\subsection{Fit for Role Candidates}
+
+\subsubsection{Candidate ID: 92016995-e455-4651-9f6e-fbca0d423f21}
+\begin{itemize}
+    \item \textbf{Total Score:} 40.90
+    \item \textbf{Fitness Category:} Fit for role
+    \item \textbf{Areas for Improvement:}
+    \begin{itemize}
+        \item Enhance communication skills
+        \item Work on body language
+        \item Boost confidence and enthusiasm
+        \item Develop emotional intelligence
+        \item Improve composure under pressure
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Candidate ID: baa26895-85b2-465b-a972-649b41d9870e}
+\begin{itemize}
+    \item \textbf{Total Score:} 39.08
+    \item \textbf{Fitness Category:} Fit for role
+    \item \textbf{Areas for Improvement:}
+    \begin{itemize}
+        \item Enhance communication skills
+        \item Work on body language
+        \item Boost confidence and enthusiasm
+        \item Develop emotional intelligence
+        \item Improve composure under pressure
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Candidate ID: dfb0d746-609f-4dac-8e1d-c0325fb64394}
+\begin{itemize}
+    \item \textbf{Total Score:} 37.27
+    \item \textbf{Fitness Category:} Fit for role
+    \item \textbf{Areas for Improvement:}
+    \begin{itemize}
+        \item Enhance communication skills
+        \item Work on body language
+        \item Boost confidence and enthusiasm
+        \item Develop emotional intelligence
+        \item Improve composure under pressure
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Candidate ID: 9c350343-e895-49df-af90-d50b91d19d3e}
+\begin{itemize}
+    \item \textbf{Total Score:} 35.79
+    \item \textbf{Fitness Category:} Fit for role
+    \item \textbf{Areas for Improvement:}
+    \begin{itemize}
+        \item Enhance communication skills
+        \item Work on body language
+        \item Boost confidence and enthusiasm
+        \item Develop emotional intelligence
+        \item Improve composure under pressure
+    \end{itemize}
+\end{itemize}
+
+\subsection{Okay Fit for Role Candidates}
+
+\subsubsection{Candidate ID: 93663f94-bf0a-4ce8-a29a-a5236cc7fe6a}
+\begin{itemize}
+    \item \textbf{Total Score:} 33.58
+    \item \textbf{Fitness Category:} Okay Fit for role
+    \item \textbf{Areas for Improvement:}
+    \begin{itemize}
+        \item Enhance communication skills
+        \item Work on body language
+        \item Boost confidence and enthusiasm
+        \item Develop emotional intelligence
+        \item Improve composure under pressure
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Candidate ID: 813af424-a584-4417-b7ee-0d4c705e83c9}
+\begin{itemize}
+    \item \textbf{Total Score:} 31.74
+    \item \textbf{Fitness Category:} Okay Fit for role
+    \item \textbf{Areas for Improvement:}
+    \begin{itemize}
+        \item Enhance communication skills
+        \item Work on body language
+        \item Boost confidence and enthusiasm
+        \item Develop emotional intelligence
+        \item Improve composure under pressure
+    \end{itemize}
+\end{itemize}
+
+\subsection{Not Fit Candidates}
+
+\subsubsection{Candidate ID: 6b0386fc-41de-4196-b0d6-3d0b815c2dbc}
+\begin{itemize}
+    \item \textbf{Total Score:} 29.05
+    \item \textbf{Fitness Category:} Not Fit
+    \item \textbf{Areas for Improvement:}
+    \begin{itemize}
+        \item Enhance communication skills
+        \item Work on body language
+        \item Boost confidence and enthusiasm
+        \item Develop emotional intelligence
+        \item Improve composure under pressure
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Candidate ID: d0b9170b-98b9-48e1-a1b2-1d661bb0d853}
+\begin{itemize}
+    \item \textbf{Total Score:} 26.25
+    \item \textbf{Fitness Category:} Not Fit
+    \item \textbf{Areas for Improvement:}
+    \begin{itemize}
+        \item Enhance communication skills
+        \item Work on body language
+        \item Boost confidence and enthusiasm
+        \item Develop emotional intelligence
+        \item Improve composure under pressure
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Candidate ID: 6539370c-256e-4ed2-9d00-1be1f051163f}
+\begin{itemize}
+    \item \textbf{Total Score:} 24.98
+    \item \textbf{Fitness Category:} Not Fit
+    \item \textbf{Areas for Improvement:}
+    \begin{itemize}
+        \item Enhance communication skills
+        \item Work on body language
+        \item Boost confidence and enthusiasm
+        \item Develop emotional intelligence
+        \item Improve composure under pressure
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Candidate ID: 83c20b83-7881-499d-a40d-cc06b65869f8}
+\begin{itemize}
+    \item \textbf{Total Score:} 22.52
+    \item \textbf{Fitness Category:} Not Fit
+    \item \textbf{Areas for Improvement:}
+    \begin{itemize}
+        \item Enhance communication skills
+        \item Work on body language
+        \item Boost confidence and enthusiasm
+        \item Develop emotional intelligence
+        \item Improve composure under pressure
+    \end{itemize}
+\end{itemize}
+

@@ -1,0 +1,30 @@
+\contentsline {section}{\numberline {1}2. BASIC Analysis}{5}{section.1}%
+\contentsline {subsection}{\numberline {(a)}A.) Communication Skills Analysis}{7}{subsection.1.1}%
+\contentsline {subsection}{\numberline {(b)}B.) Emotional State and Body Language Analysis}{11}{subsection.1.2}%
+\contentsline {section}{\numberline {2}7. Candidate Evaluation Framework Explanation}{17}{section.2}%
+\contentsline {subsection}{\numberline {(a)}Overview}{17}{subsection.2.1}%
+\contentsline {subsection}{\numberline {(b)}Score Calculation Functions}{18}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {(b).1}Communication Score}{18}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {(b).2}Body Language Score}{18}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {(b).3}Confidence and Enthusiasm Score}{18}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {(b).4}Emotional Intelligence Score}{18}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {(b).5}Composure Score}{19}{subsubsection.2.2.5}%
+\contentsline {subsection}{\numberline {(c)}Fitness Categorization}{19}{subsection.2.3}%
+\contentsline {subsection}{\numberline {(d)}Main Analysis Function}{19}{subsection.2.4}%
+\contentsline {subsection}{\numberline {(e)}Data Processing and Result Presentation}{19}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Ranking of Students and Fit or Not}{19}{section.3}%
+\contentsline {subsection}{\numberline {(a)}Candidate Evaluation Summary}{19}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Detailed Candidate Evaluations}{22}{section.4}%
+\contentsline {subsection}{\numberline {(a)}Fit for Role Candidates}{22}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {(a).1}Candidate ID: 92016995-e455-4651-9f6e-fbca0d423f21}{22}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {(a).2}Candidate ID: baa26895-85b2-465b-a972-649b41d9870e}{22}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {(a).3}Candidate ID: dfb0d746-609f-4dac-8e1d-c0325fb64394}{22}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {(a).4}Candidate ID: 9c350343-e895-49df-af90-d50b91d19d3e}{23}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {(b)}Okay Fit for Role Candidates}{23}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {(b).1}Candidate ID: 93663f94-bf0a-4ce8-a29a-a5236cc7fe6a}{23}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {(b).2}Candidate ID: 813af424-a584-4417-b7ee-0d4c705e83c9}{23}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {(c)}Not Fit Candidates}{24}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {(c).1}Candidate ID: 6b0386fc-41de-4196-b0d6-3d0b815c2dbc}{24}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {(c).2}Candidate ID: d0b9170b-98b9-48e1-a1b2-1d661bb0d853}{24}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {(c).3}Candidate ID: 6539370c-256e-4ed2-9d00-1be1f051163f}{24}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {(c).4}Candidate ID: 83c20b83-7881-499d-a40d-cc06b65869f8}{25}{subsubsection.4.3.4}%

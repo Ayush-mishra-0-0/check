@@ -1,5 +1,5 @@
 change student1 and student2 -- done
-add score table of all students
+add score table of all students --doing
 add wordblob of all students
 include gaze data for each students
 add short section of all results in start
