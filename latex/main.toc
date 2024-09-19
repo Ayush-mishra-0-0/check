@@ -1,0 +1,50 @@
+\contentsline {section}{\numberline {1}1. Introduction}{4}{section.1}%
+\contentsline {section}{\numberline {2}2. Data Overview}{5}{section.2}%
+\contentsline {subsection}{\numberline {(a)}Emotion Data Overview}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {(b)}Structure of Gaze Data}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {(c)}Transcript Data Sample}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {(d)}Basic Statistics}{6}{subsection.2.4}%
+\contentsline {section}{\numberline {3}3. Data Preparation and Integration}{7}{section.3}%
+\contentsline {section}{\numberline {4}4. Data Preprocessing}{9}{section.4}%
+\contentsline {section}{\numberline {5}5. Advanced Analysis}{10}{section.5}%
+\contentsline {subsection}{\numberline {(a)}A.) Communication Skills Analysis}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {(b)}B.) Emotional State and Body Language Analysis}{17}{subsection.5.2}%
+\contentsline {section}{\numberline {6}6. Candidate Evaluation Framework Explanation}{23}{section.6}%
+\contentsline {subsection}{\numberline {(a)}Overview}{23}{subsection.6.1}%
+\contentsline {subsection}{\numberline {(b)}Score Calculation Functions}{23}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {(b).1}Communication Score}{23}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {(b).2}Body Language Score}{23}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {(b).3}Confidence and Enthusiasm Score}{24}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {(b).4}Emotional Intelligence Score}{24}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {(b).5}Composure Score}{24}{subsubsection.6.2.5}%
+\contentsline {subsection}{\numberline {(c)}Fitness Categorization}{24}{subsection.6.3}%
+\contentsline {subsection}{\numberline {(d)}Main Analysis Function}{24}{subsection.6.4}%
+\contentsline {subsection}{\numberline {(e)}Data Processing and Result Presentation}{25}{subsection.6.5}%
+\contentsline {subsection}{\numberline {(f)}Conclusion}{25}{subsection.6.6}%
+\contentsline {section}{\numberline {7}7. Ranking of Students and Fit or Not}{26}{section.7}%
+\contentsline {section}{\numberline {8}8. Candidate Evaluation Summary}{27}{section.8}%
+\contentsline {subsubsection}{\numberline {().1}ROW ID: 6 }{27}{subsubsection.8.0.1}%
+\contentsline {subsubsection}{\numberline {().2}ROW ID: 2 }{28}{subsubsection.8.0.2}%
+\contentsline {subsubsection}{\numberline {().3}ROW ID: 9 }{28}{subsubsection.8.0.3}%
+\contentsline {subsubsection}{\numberline {().4}ROW ID: 5 }{29}{subsubsection.8.0.4}%
+\contentsline {subsection}{\numberline {(a)}Okay Fit for Role Candidates}{29}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {(a).1}Row ID: 1}{29}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {(a).2}Row ID: 8}{29}{subsubsection.8.1.2}%
+\contentsline {subsection}{\numberline {(b)}Not Fit Candidates}{30}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {(b).1}Row ID: 4}{30}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {(b).2}Row ID: 3}{30}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {(b).3}Row ID: 7}{31}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {(b).4}Row ID: 10}{31}{subsubsection.8.2.4}%
+\contentsline {section}{\numberline {9}9.Detailed Individual Student Analysis}{32}{section.9}%
+\contentsline {subsection}{\numberline {(a)}Student 1}{33}{subsection.9.1}%
+\contentsline {subsection}{\numberline {(b)}Student 2}{36}{subsection.9.2}%
+\contentsline {subsection}{\numberline {(c)}Student 3}{38}{subsection.9.3}%
+\contentsline {subsection}{\numberline {(d)}Student 4}{41}{subsection.9.4}%
+\contentsline {subsection}{\numberline {(e)}Student 5}{43}{subsection.9.5}%
+\contentsline {subsection}{\numberline {(f)}Student 6}{46}{subsection.9.6}%
+\contentsline {subsection}{\numberline {(g)}Student 7}{48}{subsection.9.7}%
+\contentsline {subsection}{\numberline {(h)}Student 8}{51}{subsection.9.8}%
+\contentsline {subsection}{\numberline {(i)}Student 9}{53}{subsection.9.9}%
+\contentsline {subsection}{\numberline {(j)}Student 10}{56}{subsection.9.10}%
+\contentsline {section}{\numberline {10}Conclusion}{58}{section.10}%
+\contentsline {section}{\numberline {11}Future Work}{59}{section.11}%
