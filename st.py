@@ -748,7 +748,7 @@ def main():
         combined_emotion_analysis()
     elif data_type== "Combined Gaze Data":
         combined_gaze_analysis()
-    elif data_type== "final":
+    elif data_type== "Final Analysis with Transcript, Emotion Data and Gaze Data":
         show_final_analysis()
     
 
