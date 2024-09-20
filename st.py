@@ -25,9 +25,7 @@ data_type = st.sidebar.radio("Select Data Type", [
     "Emotion Data", 
     "Final Analysis with Transcript, Emotion Data and Gaze Data",
     "Combined Emotion Analysis", 
-    "Combined Gaze Data", 
-    "Prompt PDF",
-    "Main PDF"
+    "Combined Gaze Data"
     
 ])
 
@@ -188,7 +186,7 @@ def gaze_data_analysis(option):
 def transcript_data_analysis(option):
     transcript_df = load_transcript_data(option)
 
-    st.title(f"Transcript Data Analysis - Option {option}")
+    st.title(f"Transcript Data Analysis - Student {option}")
     
     st.subheader("Transcript Data Sample")
     st.write(transcript_df.head())
@@ -752,13 +750,6 @@ def main():
         combined_gaze_analysis()
     elif data_type== "final":
         show_final_analysis()
-
-    elif data_type == "Prompt PDF":
-        st.title("Prompt PDF")
-        display_pdf("resources/prompts.pdf")
-    elif data_type == "Main PDF":
-        st.title("Main PDF")
-        display_pdf("resources/iby_report.pdf")
     
 
 
