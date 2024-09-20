@@ -5,7 +5,10 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
 import io
+import os
+import base64
 import seaborn as sns
+from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from scipy import stats
 from sklearn.ensemble import RandomForestRegressor
@@ -23,7 +26,9 @@ data_type = st.sidebar.radio("Select Data Type", [
     "Transcript Data", 
     "Combined Emotion Analysis", 
     "Combined Gaze Data", 
-    "Emotion with Gaze and Transcript Analysis"
+    "Emotion with Gaze and Transcript Analysis",
+    "Prompt PDF",
+    "Main PDF"
     
 ])
 
@@ -196,7 +201,28 @@ def transcript_data_analysis(option):
     transcript_df['duration'] = transcript_df['end'] - transcript_df['start']
     fig = px.histogram(transcript_df, x='duration', title="Distribution of Speech Durations")
     st.plotly_chart(fig)
+    
+    
 
+    # Word count distribution
+    st.subheader("Word Count Distribution")
+    transcript_df['word_count'] = transcript_df['text'].str.split().str.len()
+    fig = px.histogram(transcript_df, x='word_count', nbins=20, title="Distribution of Word Counts")
+    st.plotly_chart(fig)
+
+    # --- New Addition: Word Cloud Analysis ---
+    st.subheader("Word Cloud Analysis")
+    words = ' '.join(transcript_df['text'].values)
+    words_filtered = ' '.join([word for word in words.split() if len(word) >= 4])
+    
+    # Generate word cloud
+    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(words_filtered)
+    
+    # Display word cloud
+    fig, ax = plt.subplots(figsize=(10, 5))
+    ax.imshow(wordcloud, interpolation='bilinear')
+    ax.axis("off")
+    st.pyplot(fig)
 
     # Sentiment analysis
     st.subheader("Sentiment Analysis")
@@ -205,6 +231,7 @@ def transcript_data_analysis(option):
                  title="Sentiment Scores for Each Speech Segment")
     st.plotly_chart(fig)
 
+    # Speech Speed and Confidence Over Time
     st.subheader("Speech Speed and Confidence Over Time")
     fig = make_subplots(specs=[[{"secondary_y": True}]])
     fig.add_trace(go.Scatter(x=transcript_df['start'], y=transcript_df['speech_speed'], 
@@ -217,6 +244,7 @@ def transcript_data_analysis(option):
     fig.update_yaxes(title_text="Confidence", secondary_y=True)
     st.plotly_chart(fig)
 
+    # Speech Characteristics Radar Chart
     st.subheader("Speech Characteristics Radar Chart")
     speech_chars = ['confident', 'hesitant', 'concise', 'enthusiastic']
     avg_chars = transcript_df[speech_chars].mean().values.tolist()
@@ -231,7 +259,6 @@ def transcript_data_analysis(option):
         title="Average Speech Characteristics"
     )
     st.plotly_chart(fig)
-    
 
     # Correlation Heatmap for Speech Characteristics
     st.subheader("Correlation Heatmap for Speech Characteristics")
@@ -239,7 +266,6 @@ def transcript_data_analysis(option):
     fig = px.imshow(corr, labels=dict(x="Characteristics", y="Characteristics", color="Correlation"),
                     title="Correlation Heatmap of Speech Characteristics")
     st.plotly_chart(fig)
-
 
     # Speech speed over time
     st.subheader("Speech Speed Over Time")
@@ -254,6 +280,20 @@ def transcript_data_analysis(option):
                      color='confident', size='enthusiastic',
                      title="Word Count vs Speech Speed (colored by confidence, size by enthusiasm)")
     st.plotly_chart(fig)
+    
+    # --- New Addition: Speech Speed Segmentation ---
+    st.subheader("Speech Speed by Segment")
+    transcript_df['segment'] = pd.cut(transcript_df['start'], bins=10, labels=False)
+    fig = px.box(transcript_df, x='segment', y='speech_speed', 
+                 title="Speech Speed by Segment", labels={'segment': 'Segment'})
+    st.plotly_chart(fig)
+
+    # --- New Addition: Pause Duration Analysis ---
+    st.subheader("Pause Duration Analysis")
+    transcript_df['pause_duration'] = transcript_df['start'].shift(-1) - transcript_df['end']
+    fig = px.histogram(transcript_df, x='pause_duration', title="Distribution of Pause Durations")
+    st.plotly_chart(fig)
+
 
 
 def combined_emotion_analysis():
@@ -682,8 +722,22 @@ def show_final_analysis():
     fig = px.scatter(df, x=x_axis, y=y_axis, title=f'{x_axis} vs {y_axis}')
     st.plotly_chart(fig)
 
+def display_pdf(file_path):
+    with open(file_path, "rb") as file:
+        base64_pdf = base64.b64encode(file.read()).decode('utf-8')
+        pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
+        # pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf">'
+        st.markdown(pdf_display, unsafe_allow_html=True)
 
 
+def display_pdf(file):
+    if os.path.exists(file):  # Check if file exists
+        with open(file, "rb") as f:
+            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+            pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="1100" height="1000" type="application/pdf"></iframe>'
+            st.markdown(pdf_display, unsafe_allow_html=True)
+    else:
+        st.error(f"File {file} not found.")
 
 def main():
     if data_type == "Emotion Data":
@@ -699,6 +753,13 @@ def main():
         combined_gaze_analysis()
     elif data_type== "final":
         show_final_analysis()
+
+    elif data_type == "Prompt PDF":
+        st.title("Prompt PDF")
+        display_pdf("resources/prompts.pdf")
+    elif data_type == "Main PDF":
+        st.title("Main PDF")
+        display_pdf("resources/iby_report.pdf")
     
 
 
