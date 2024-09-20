@@ -21,9 +21,9 @@ st.set_page_config(layout="wide", page_title="Emotion and Transcript Data Dashbo
 # Sidebar
 st.sidebar.title("Navigation")
 data_type = st.sidebar.radio("Select Data Type", [
-    "final",
-    "Emotion Data", 
     "Transcript Data", 
+    "Emotion Data", 
+    "final",
     "Combined Emotion Analysis", 
     "Combined Gaze Data", 
     "Emotion with Gaze and Transcript Analysis",
