@@ -23,10 +23,9 @@ st.sidebar.title("Navigation")
 data_type = st.sidebar.radio("Select Data Type", [
     "Transcript Data", 
     "Emotion Data", 
-    "final",
+    "Final Analysis with Transcript, Emotion Data and Gaze Data",
     "Combined Emotion Analysis", 
     "Combined Gaze Data", 
-    "Emotion with Gaze and Transcript Analysis",
     "Prompt PDF",
     "Main PDF"
     
