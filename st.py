@@ -458,7 +458,39 @@ def show_final_analysis():
             st.write(f"#### {col} Distribution:")
             fig = px.line(df,x= range(1,11), y=col, title=f"Distribution of {col}")
             st.plotly_chart(fig)
+   
+    
+    # Interactive widget for exploring relationships
+    st.header("Explore Relationships")
+    # remove unnamed column and x_axis , y_axis should not be same
 
+    df = df.drop(columns=['Unnamed: 0'])
+
+    x_axis = st.selectbox("Choose X-axis", df.columns)
+    # Ensure that Y-axis is not the same as X-axis by excluding the selected X-axis from the options
+    y_axis = st.selectbox("Choose Y-axis", [col for col in df.columns if col != x_axis])
+
+    # Scatter plot between the selected X and Y axes
+    fig = px.scatter(df, x=x_axis, y=y_axis, title=f'{x_axis} vs {y_axis}')
+    # st.plotly_chart(fig)
+    x = df[x_axis]
+    y = df[y_axis]
+    slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
+
+    # Add regression line to the scatter plot
+    regression_line = slope * x + intercept
+    fig.add_traces(go.Scatter(x=x, y=regression_line, mode='lines', name='Regression Line', line=dict(color='red')))
+
+    # Display the scatter plot with the regression line
+    st.plotly_chart(fig)
+
+    # Optionally, show the regression equation and R-squared value
+    st.subheader("Regression Details")
+    st.write(f"**Equation**: y = {slope:.2f}x + {intercept:.2f}")
+    st.write(f"**R-squared**: {r_value**2:.2f}")
+
+    # again add unnamed column
+    df = pd.read_csv("final_df.csv")
     # Call the function
     distribution_plots(df)
     def analyze_confidence(df):
@@ -712,12 +744,6 @@ def show_final_analysis():
     fig = px.bar(importances, x='importance', y='feature', orientation='h', title="Feature Importance for Speech Speed")
     st.plotly_chart(fig)
 
-    # Interactive widget for exploring relationships
-    st.header("Explore Relationships")
-    x_axis = st.selectbox("Choose X-axis", df.columns)
-    y_axis = st.selectbox("Choose Y-axis", df.columns)
-    fig = px.scatter(df, x=x_axis, y=y_axis, title=f'{x_axis} vs {y_axis}')
-    st.plotly_chart(fig)
 
 def display_pdf(file_path):
     with open(file_path, "rb") as file:
